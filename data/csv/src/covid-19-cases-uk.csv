@@ -1,60 +1,4 @@
 Date,Country,AreaCode,Area,TotalCases
-2020-03-01,Scotland,S08000015,Ayrshire and Arran,0
-2020-03-01,Scotland,S08000016,Borders,0
-2020-03-01,Scotland,S08000017,Dumfries and Galloway,0
-2020-03-01,Scotland,S08000029,Fife,0
-2020-03-01,Scotland,S08000019,Forth Valley,0
-2020-03-01,Scotland,S08000020,Grampian,0
-2020-03-01,Scotland,S08000031,Greater Glasgow and Clyde,0
-2020-03-01,Scotland,S08000022,Highland,0
-2020-03-01,Scotland,S08000032,Lanarkshire,0
-2020-03-01,Scotland,S08000024,Lothian,0
-2020-03-01,Scotland,S08000025,Orkney,0
-2020-03-01,Scotland,S08000026,Shetland,0
-2020-03-01,Scotland,S08000030,Tayside,0
-2020-03-01,Scotland,S08000028,Western Isles,0
-2020-03-02,Scotland,S08000015,Ayrshire and Arran,0
-2020-03-02,Scotland,S08000016,Borders,0
-2020-03-02,Scotland,S08000017,Dumfries and Galloway,0
-2020-03-02,Scotland,S08000029,Fife,0
-2020-03-02,Scotland,S08000019,Forth Valley,0
-2020-03-02,Scotland,S08000020,Grampian,0
-2020-03-02,Scotland,S08000031,Greater Glasgow and Clyde,0
-2020-03-02,Scotland,S08000022,Highland,0
-2020-03-02,Scotland,S08000032,Lanarkshire,0
-2020-03-02,Scotland,S08000024,Lothian,0
-2020-03-02,Scotland,S08000025,Orkney,0
-2020-03-02,Scotland,S08000026,Shetland,0
-2020-03-02,Scotland,S08000030,Tayside,1
-2020-03-02,Scotland,S08000028,Western Isles,0
-2020-03-03,Scotland,S08000015,Ayrshire and Arran,0
-2020-03-03,Scotland,S08000016,Borders,0
-2020-03-03,Scotland,S08000017,Dumfries and Galloway,0
-2020-03-03,Scotland,S08000029,Fife,0
-2020-03-03,Scotland,S08000019,Forth Valley,0
-2020-03-03,Scotland,S08000020,Grampian,0
-2020-03-03,Scotland,S08000031,Greater Glasgow and Clyde,0
-2020-03-03,Scotland,S08000022,Highland,0
-2020-03-03,Scotland,S08000032,Lanarkshire,0
-2020-03-03,Scotland,S08000024,Lothian,0
-2020-03-03,Scotland,S08000025,Orkney,0
-2020-03-03,Scotland,S08000026,Shetland,0
-2020-03-03,Scotland,S08000030,Tayside,1
-2020-03-03,Scotland,S08000028,Western Isles,0
-2020-03-04,Scotland,S08000015,Ayrshire and Arran,1
-2020-03-04,Scotland,S08000016,Borders,0
-2020-03-04,Scotland,S08000017,Dumfries and Galloway,0
-2020-03-04,Scotland,S08000029,Fife,0
-2020-03-04,Scotland,S08000019,Forth Valley,0
-2020-03-04,Scotland,S08000020,Grampian,1
-2020-03-04,Scotland,S08000031,Greater Glasgow and Clyde,0
-2020-03-04,Scotland,S08000022,Highland,0
-2020-03-04,Scotland,S08000032,Lanarkshire,0
-2020-03-04,Scotland,S08000024,Lothian,0
-2020-03-04,Scotland,S08000025,Orkney,0
-2020-03-04,Scotland,S08000026,Shetland,0
-2020-03-04,Scotland,S08000030,Tayside,1
-2020-03-04,Scotland,S08000028,Western Isles,0
 2020-03-05,England,E09000002,Barking and Dagenham,0
 2020-03-05,England,E09000003,Barnet,1 to 4
 2020-03-05,England,E08000016,Barnsley,1 to 4
@@ -208,20 +152,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-05,England,E10000034,Worcestershire,0
 2020-03-05,England,E06000014,York,1 to 4
 2020-03-05,England,,awaiting clarification,8
-2020-03-05,Scotland,S08000015,Ayrshire and Arran,1
-2020-03-05,Scotland,S08000016,Borders,0
-2020-03-05,Scotland,S08000017,Dumfries and Galloway,0
-2020-03-05,Scotland,S08000029,Fife,0
-2020-03-05,Scotland,S08000019,Forth Valley,1
-2020-03-05,Scotland,S08000020,Grampian,2
-2020-03-05,Scotland,S08000031,Greater Glasgow and Clyde,1
-2020-03-05,Scotland,S08000022,Highland,0
-2020-03-05,Scotland,S08000032,Lanarkshire,0
-2020-03-05,Scotland,S08000024,Lothian,0
-2020-03-05,Scotland,S08000025,Orkney,0
-2020-03-05,Scotland,S08000026,Shetland,0
-2020-03-05,Scotland,S08000030,Tayside,1
-2020-03-05,Scotland,S08000028,Western Isles,0
 2020-03-05,Wales,W06000019,Blaenau Gwent,0
 2020-03-05,Wales,W06000013,Bridgend,0
 2020-03-05,Wales,W06000018,Caerphilly,0
@@ -244,13 +174,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-05,Wales,W06000020,Torfaen,0
 2020-03-05,Wales,W06000014,Vale of Glamorgan,0
 2020-03-05,Wales,W06000006,Wrexham,0
-2020-03-06,Scotland,S08000030,Tayside,1
-2020-03-06,Scotland,S08000015,Ayrshire and Arran,1
-2020-03-06,Scotland,S08000019,Forth Valley,2
-2020-03-06,Scotland,S08000031,Greater Glasgow and Clyde,1
-2020-03-06,Scotland,S08000020,Grampian,3
-2020-03-06,Scotland,S08000029,Fife,2
-2020-03-06,Scotland,S08000024,Lothian,1
 2020-03-06,Wales,W06000019,Blaenau Gwent,0
 2020-03-06,Wales,W06000013,Bridgend,0
 2020-03-06,Wales,W06000018,Caerphilly,0
@@ -424,14 +347,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-07,England,E10000034,Worcestershire,0
 2020-03-07,England,E06000014,York,3
 2020-03-07,England,,awaiting clarification,14
-2020-03-07,Scotland,S08000030,Tayside,1
-2020-03-07,Scotland,S08000015,Ayrshire and Arran,1
-2020-03-07,Scotland,S08000019,Forth Valley,2
-2020-03-07,Scotland,S08000031,Greater Glasgow and Clyde,2
-2020-03-07,Scotland,S08000020,Grampian,4
-2020-03-07,Scotland,S08000029,Fife,2
-2020-03-07,Scotland,S08000024,Lothian,2
-2020-03-07,Scotland,S08000032,Lanarkshire,2
+2020-03-07,Scotland,S08000015,Ayrshire and Arran,NaN
+2020-03-07,Scotland,S08000016,Borders,NaN
+2020-03-07,Scotland,S08000017,Dumfries and Galloway,NaN
+2020-03-07,Scotland,S08000029,Fife,NaN
+2020-03-07,Scotland,S08000019,Forth Valley,NaN
+2020-03-07,Scotland,S08000020,Grampian,NaN
+2020-03-07,Scotland,S08000031,Greater Glasgow and Clyde,NaN
+2020-03-07,Scotland,S08000022,Highland,NaN
+2020-03-07,Scotland,S08000032,Lanarkshire,NaN
+2020-03-07,Scotland,S08000024,Lothian,NaN
+2020-03-07,Scotland,S08000025,Orkney,NaN
+2020-03-07,Scotland,S08000026,Shetland,NaN
+2020-03-07,Scotland,S08000030,Tayside,NaN
+2020-03-07,Scotland,S08000028,Western Isles,NaN
 2020-03-07,Wales,W06000019,Blaenau Gwent,0
 2020-03-07,Wales,W06000013,Bridgend,0
 2020-03-07,Wales,W06000018,Caerphilly,0
@@ -604,14 +533,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-08,England,E10000034,Worcestershire,0
 2020-03-08,England,E06000014,York,3
 2020-03-08,England,,Awaiting confirmation,20
-2020-03-08,Scotland,S08000030,Tayside,1
-2020-03-08,Scotland,S08000015,Ayrshire and Arran,1
-2020-03-08,Scotland,S08000019,Forth Valley,2
-2020-03-08,Scotland,S08000031,Greater Glasgow and Clyde,3
-2020-03-08,Scotland,S08000020,Grampian,4
-2020-03-08,Scotland,S08000029,Fife,2
-2020-03-08,Scotland,S08000024,Lothian,3
-2020-03-08,Scotland,S08000032,Lanarkshire,2
+2020-03-08,Scotland,S08000015,Ayrshire and Arran,NaN
+2020-03-08,Scotland,S08000016,Borders,NaN
+2020-03-08,Scotland,S08000017,Dumfries and Galloway,NaN
+2020-03-08,Scotland,S08000029,Fife,NaN
+2020-03-08,Scotland,S08000019,Forth Valley,NaN
+2020-03-08,Scotland,S08000020,Grampian,NaN
+2020-03-08,Scotland,S08000031,Greater Glasgow and Clyde,NaN
+2020-03-08,Scotland,S08000022,Highland,NaN
+2020-03-08,Scotland,S08000032,Lanarkshire,NaN
+2020-03-08,Scotland,S08000024,Lothian,NaN
+2020-03-08,Scotland,S08000025,Orkney,NaN
+2020-03-08,Scotland,S08000026,Shetland,NaN
+2020-03-08,Scotland,S08000030,Tayside,NaN
+2020-03-08,Scotland,S08000028,Western Isles,NaN
 2020-03-08,Wales,W06000019,Blaenau Gwent,0
 2020-03-08,Wales,W06000013,Bridgend,0
 2020-03-08,Wales,W06000018,Caerphilly,0
@@ -784,15 +719,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-09,England,E10000034,Worcestershire,0
 2020-03-09,England,E06000014,York,3
 2020-03-09,England,,Awaiting confirmation,26
-2020-03-09,Scotland,S08000015,Ayrshire and Arran,1
-2020-03-09,Scotland,S08000029,Fife,2
-2020-03-09,Scotland,S08000019,Forth Valley,2
-2020-03-09,Scotland,S08000020,Grampian,4
-2020-03-09,Scotland,S08000031,Greater Glasgow and Clyde,3
-2020-03-09,Scotland,S08000032,Lanarkshire,3
+2020-03-09,Scotland,S08000015,Ayrshire and Arran,NaN
+2020-03-09,Scotland,S08000016,Borders,NaN
+2020-03-09,Scotland,S08000017,Dumfries and Galloway,NaN
+2020-03-09,Scotland,S08000029,Fife,NaN
+2020-03-09,Scotland,S08000019,Forth Valley,NaN
+2020-03-09,Scotland,S08000020,Grampian,NaN
+2020-03-09,Scotland,S08000031,Greater Glasgow and Clyde,NaN
+2020-03-09,Scotland,S08000022,Highland,NaN
+2020-03-09,Scotland,S08000032,Lanarkshire,NaN
 2020-03-09,Scotland,S08000024,Lothian,5
-2020-03-09,Scotland,S08000026,Shetland,2
-2020-03-09,Scotland,S08000030,Tayside,1
+2020-03-09,Scotland,S08000025,Orkney,NaN
+2020-03-09,Scotland,S08000026,Shetland,NaN
+2020-03-09,Scotland,S08000030,Tayside,NaN
+2020-03-09,Scotland,S08000028,Western Isles,NaN
 2020-03-09,Wales,W06000019,Blaenau Gwent,0
 2020-03-09,Wales,W06000013,Bridgend,0
 2020-03-09,Wales,W06000018,Caerphilly,0
@@ -965,15 +905,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-10,England,E10000034,Worcestershire,0
 2020-03-10,England,E06000014,York,3
 2020-03-10,England,,Awaiting confirmation,15
-2020-03-10,Scotland,S08000015,Ayrshire and Arran,1
-2020-03-10,Scotland,S08000029,Fife,2
-2020-03-10,Scotland,S08000019,Forth Valley,2
+2020-03-10,Scotland,S08000015,Ayrshire and Arran,NaN
+2020-03-10,Scotland,S08000016,Borders,NaN
+2020-03-10,Scotland,S08000017,Dumfries and Galloway,NaN
+2020-03-10,Scotland,S08000029,Fife,NaN
+2020-03-10,Scotland,S08000019,Forth Valley,NaN
 2020-03-10,Scotland,S08000020,Grampian,6
-2020-03-10,Scotland,S08000031,Greater Glasgow and Clyde,3
-2020-03-10,Scotland,S08000032,Lanarkshire,3
+2020-03-10,Scotland,S08000031,Greater Glasgow and Clyde,NaN
+2020-03-10,Scotland,S08000022,Highland,NaN
+2020-03-10,Scotland,S08000032,Lanarkshire,NaN
 2020-03-10,Scotland,S08000024,Lothian,7
-2020-03-10,Scotland,S08000026,Shetland,2
-2020-03-10,Scotland,S08000030,Tayside,1
+2020-03-10,Scotland,S08000025,Orkney,NaN
+2020-03-10,Scotland,S08000026,Shetland,NaN
+2020-03-10,Scotland,S08000030,Tayside,NaN
+2020-03-10,Scotland,S08000028,Western Isles,NaN
 2020-03-10,Wales,W06000019,Blaenau Gwent,0
 2020-03-10,Wales,W06000013,Bridgend,0
 2020-03-10,Wales,W06000018,Caerphilly,0
@@ -1145,16 +1090,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-11,England,E10000031,Warwickshire,4
 2020-03-11,England,E10000032,West Sussex,3
 2020-03-11,England,E10000034,Worcestershire,0
-2020-03-11,Scotland,S08000015,Ayrshire and Arran,3
-2020-03-11,Scotland,S08000016,Borders,2
-2020-03-11,Scotland,S08000029,Fife,2
-2020-03-11,Scotland,S08000019,Forth Valley,2
+2020-03-11,Scotland,S08000015,Ayrshire and Arran,NaN
+2020-03-11,Scotland,S08000016,Borders,NaN
+2020-03-11,Scotland,S08000017,Dumfries and Galloway,NaN
+2020-03-11,Scotland,S08000029,Fife,NaN
+2020-03-11,Scotland,S08000019,Forth Valley,NaN
 2020-03-11,Scotland,S08000020,Grampian,6
 2020-03-11,Scotland,S08000031,Greater Glasgow and Clyde,5
-2020-03-11,Scotland,S08000032,Lanarkshire,4
+2020-03-11,Scotland,S08000022,Highland,NaN
+2020-03-11,Scotland,S08000032,Lanarkshire,NaN
 2020-03-11,Scotland,S08000024,Lothian,8
-2020-03-11,Scotland,S08000026,Shetland,2
-2020-03-11,Scotland,S08000030,Tayside,2
+2020-03-11,Scotland,S08000025,Orkney,NaN
+2020-03-11,Scotland,S08000026,Shetland,NaN
+2020-03-11,Scotland,S08000030,Tayside,NaN
+2020-03-11,Scotland,S08000028,Western Isles,NaN
 2020-03-11,Wales,W06000019,Blaenau Gwent,0
 2020-03-11,Wales,W06000013,Bridgend,0
 2020-03-11,Wales,W06000018,Caerphilly,1
@@ -1326,16 +1275,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-12,England,E08000031,Wolverhampton,4
 2020-03-12,England,E10000034,Worcestershire,0
 2020-03-12,England,E06000014,York,3
-2020-03-12,Scotland,S08000015,Ayrshire and Arran,4
-2020-03-12,Scotland,S08000016,Borders,2
-2020-03-12,Scotland,S08000029,Fife,3
+2020-03-12,Scotland,S08000015,Ayrshire and Arran,NaN
+2020-03-12,Scotland,S08000016,Borders,NaN
+2020-03-12,Scotland,S08000017,Dumfries and Galloway,NaN
+2020-03-12,Scotland,S08000029,Fife,NaN
 2020-03-12,Scotland,S08000019,Forth Valley,6
 2020-03-12,Scotland,S08000020,Grampian,7
 2020-03-12,Scotland,S08000031,Greater Glasgow and Clyde,10
+2020-03-12,Scotland,S08000022,Highland,NaN
 2020-03-12,Scotland,S08000032,Lanarkshire,7
 2020-03-12,Scotland,S08000024,Lothian,11
+2020-03-12,Scotland,S08000025,Orkney,NaN
 2020-03-12,Scotland,S08000026,Shetland,6
-2020-03-12,Scotland,S08000030,Tayside,4
+2020-03-12,Scotland,S08000030,Tayside,NaN
+2020-03-12,Scotland,S08000028,Western Isles,NaN
 2020-03-12,Wales,W06000019,Blaenau Gwent,1
 2020-03-12,Wales,W06000013,Bridgend,0
 2020-03-12,Wales,W06000018,Caerphilly,1
@@ -1507,16 +1460,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-13,England,E08000031,Wolverhampton,8
 2020-03-13,England,E10000034,Worcestershire,2
 2020-03-13,England,E06000014,York,4
-2020-03-13,Scotland,S08000015,Ayrshire and Arran,4
-2020-03-13,Scotland,S08000016,Borders,3
-2020-03-13,Scotland,S08000029,Fife,4
+2020-03-13,Scotland,S08000015,Ayrshire and Arran,NaN
+2020-03-13,Scotland,S08000016,Borders,NaN
+2020-03-13,Scotland,S08000017,Dumfries and Galloway,NaN
+2020-03-13,Scotland,S08000029,Fife,NaN
 2020-03-13,Scotland,S08000019,Forth Valley,6
-2020-03-13,Scotland,S08000020,Grampian,11
-2020-03-13,Scotland,S08000031,Greater Glasgow and Clyde,21
+2020-03-13,Scotland,S08000020,Grampian,9
+2020-03-13,Scotland,S08000031,Greater Glasgow and Clyde,20
+2020-03-13,Scotland,S08000022,Highland,NaN
 2020-03-13,Scotland,S08000032,Lanarkshire,7
-2020-03-13,Scotland,S08000024,Lothian,20
-2020-03-13,Scotland,S08000026,Shetland,6
-2020-03-13,Scotland,S08000030,Tayside,3
+2020-03-13,Scotland,S08000024,Lothian,19
+2020-03-13,Scotland,S08000025,Orkney,NaN
+2020-03-13,Scotland,S08000026,Shetland,8
+2020-03-13,Scotland,S08000030,Tayside,NaN
+2020-03-13,Scotland,S08000028,Western Isles,NaN
 2020-03-13,Wales,W06000019,Blaenau Gwent,1
 2020-03-13,Wales,W06000013,Bridgend,0
 2020-03-13,Wales,W06000018,Caerphilly,5
@@ -1690,15 +1647,18 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-14,England,E06000014,York,4
 2020-03-14,Scotland,S08000015,Ayrshire and Arran,6
 2020-03-14,Scotland,S08000016,Borders,5
+2020-03-14,Scotland,S08000017,Dumfries and Galloway,NaN
 2020-03-14,Scotland,S08000029,Fife,6
 2020-03-14,Scotland,S08000019,Forth Valley,6
 2020-03-14,Scotland,S08000020,Grampian,9
 2020-03-14,Scotland,S08000031,Greater Glasgow and Clyde,31
-2020-03-14,Scotland,S08000022,Highland,1
+2020-03-14,Scotland,S08000022,Highland,NaN
 2020-03-14,Scotland,S08000032,Lanarkshire,10
 2020-03-14,Scotland,S08000024,Lothian,25
-2020-03-14,Scotland,S08000026,Shetland,11
+2020-03-14,Scotland,S08000025,Orkney,NaN
+2020-03-14,Scotland,S08000026,Shetland,13
 2020-03-14,Scotland,S08000030,Tayside,11
+2020-03-14,Scotland,S08000028,Western Isles,NaN
 2020-03-14,Wales,W06000019,Blaenau Gwent,1
 2020-03-14,Wales,W06000013,Bridgend,1
 2020-03-14,Wales,W06000018,Caerphilly,7
@@ -1872,15 +1832,18 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-15,England,E06000014,York,4
 2020-03-15,Scotland,S08000015,Ayrshire and Arran,6
 2020-03-15,Scotland,S08000016,Borders,7
+2020-03-15,Scotland,S08000017,Dumfries and Galloway,NaN
 2020-03-15,Scotland,S08000029,Fife,7
 2020-03-15,Scotland,S08000019,Forth Valley,10
 2020-03-15,Scotland,S08000020,Grampian,12
 2020-03-15,Scotland,S08000031,Greater Glasgow and Clyde,39
-2020-03-15,Scotland,S08000022,Highland,2
+2020-03-15,Scotland,S08000022,Highland,NaN
 2020-03-15,Scotland,S08000032,Lanarkshire,16
 2020-03-15,Scotland,S08000024,Lothian,28
-2020-03-15,Scotland,S08000026,Shetland,11
+2020-03-15,Scotland,S08000025,Orkney,NaN
+2020-03-15,Scotland,S08000026,Shetland,13
 2020-03-15,Scotland,S08000030,Tayside,15
+2020-03-15,Scotland,S08000028,Western Isles,NaN
 2020-03-15,Wales,W06000019,Blaenau Gwent,4
 2020-03-15,Wales,W06000013,Bridgend,1
 2020-03-15,Wales,W06000018,Caerphilly,11
@@ -2052,18 +2015,20 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-16,England,E08000031,Wolverhampton,11
 2020-03-16,England,E10000034,Worcestershire,3
 2020-03-16,England,E06000014,York,4
-2020-03-16,Scotland,S08000015,Ayrshire and Arran,7
+2020-03-16,Scotland,S08000015,Ayrshire and Arran,6
 2020-03-16,Scotland,S08000016,Borders,7
-2020-03-16,Scotland,S08000017,Dumfries and Galloway,1
+2020-03-16,Scotland,S08000017,Dumfries and Galloway,NaN
 2020-03-16,Scotland,S08000029,Fife,7
 2020-03-16,Scotland,S08000019,Forth Valley,10
 2020-03-16,Scotland,S08000020,Grampian,12
 2020-03-16,Scotland,S08000031,Greater Glasgow and Clyde,44
-2020-03-16,Scotland,S08000022,Highland,2
+2020-03-16,Scotland,S08000022,Highland,NaN
 2020-03-16,Scotland,S08000032,Lanarkshire,20
 2020-03-16,Scotland,S08000024,Lothian,29
+2020-03-16,Scotland,S08000025,Orkney,NaN
 2020-03-16,Scotland,S08000026,Shetland,15
 2020-03-16,Scotland,S08000030,Tayside,17
+2020-03-16,Scotland,S08000028,Western Isles,NaN
 2020-03-16,Wales,W06000019,Blaenau Gwent,7
 2020-03-16,Wales,W06000013,Bridgend,1
 2020-03-16,Wales,W06000018,Caerphilly,14
@@ -2237,16 +2202,18 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-17,England,E06000014,York,3
 2020-03-17,Scotland,S08000015,Ayrshire and Arran,6
 2020-03-17,Scotland,S08000016,Borders,7
-2020-03-17,Scotland,S08000017,Dumfries and Galloway,1
+2020-03-17,Scotland,S08000017,Dumfries and Galloway,NaN
 2020-03-17,Scotland,S08000029,Fife,7
 2020-03-17,Scotland,S08000019,Forth Valley,12
-2020-03-17,Scotland,S08000020,Grampian,26
+2020-03-17,Scotland,S08000020,Grampian,18
 2020-03-17,Scotland,S08000031,Greater Glasgow and Clyde,49
 2020-03-17,Scotland,S08000022,Highland,5
 2020-03-17,Scotland,S08000032,Lanarkshire,21
 2020-03-17,Scotland,S08000024,Lothian,30
-2020-03-17,Scotland,S08000026,Shetland,11
+2020-03-17,Scotland,S08000025,Orkney,NaN
+2020-03-17,Scotland,S08000026,Shetland,15
 2020-03-17,Scotland,S08000030,Tayside,20
+2020-03-17,Scotland,S08000028,Western Isles,NaN
 2020-03-17,Wales,W06000019,Blaenau Gwent,8
 2020-03-17,Wales,W06000013,Bridgend,3
 2020-03-17,Wales,W06000018,Caerphilly,15
@@ -2421,16 +2388,18 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-18,England,E06000014,York,4
 2020-03-18,Scotland,S08000015,Ayrshire and Arran,9
 2020-03-18,Scotland,S08000016,Borders,7
-2020-03-18,Scotland,S08000017,Dumfries and Galloway,4
+2020-03-18,Scotland,S08000017,Dumfries and Galloway,NaN
 2020-03-18,Scotland,S08000029,Fife,8
 2020-03-18,Scotland,S08000019,Forth Valley,15
-2020-03-18,Scotland,S08000020,Grampian,24
+2020-03-18,Scotland,S08000020,Grampian,18
 2020-03-18,Scotland,S08000031,Greater Glasgow and Clyde,57
 2020-03-18,Scotland,S08000022,Highland,5
 2020-03-18,Scotland,S08000032,Lanarkshire,25
 2020-03-18,Scotland,S08000024,Lothian,33
+2020-03-18,Scotland,S08000025,Orkney,NaN
 2020-03-18,Scotland,S08000026,Shetland,16
 2020-03-18,Scotland,S08000030,Tayside,24
+2020-03-18,Scotland,S08000028,Western Isles,NaN
 2020-03-19,England,E09000002,Barking and Dagenham,18
 2020-03-19,England,E09000003,Barnet,28
 2020-03-19,England,E08000016,Barnsley,7
@@ -2590,8 +2559,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-19,Scotland,S08000022,Highland,6
 2020-03-19,Scotland,S08000032,Lanarkshire,33
 2020-03-19,Scotland,S08000024,Lothian,35
+2020-03-19,Scotland,S08000025,Orkney,NaN
 2020-03-19,Scotland,S08000026,Shetland,24
 2020-03-19,Scotland,S08000030,Tayside,27
+2020-03-19,Scotland,S08000028,Western Isles,NaN
 2020-03-19,Wales,W11000031,Swansea Bay,33
 2020-03-19,Wales,W11000028,Aneurin Bevan,76
 2020-03-19,Wales,W11000023,Betsi Cadwaladr,7
@@ -2758,8 +2729,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-20,Scotland,S08000022,Highland,6
 2020-03-20,Scotland,S08000032,Lanarkshire,41
 2020-03-20,Scotland,S08000024,Lothian,40
+2020-03-20,Scotland,S08000025,Orkney,NaN
 2020-03-20,Scotland,S08000026,Shetland,24
 2020-03-20,Scotland,S08000030,Tayside,31
+2020-03-20,Scotland,S08000028,Western Isles,NaN
 2020-03-20,Wales,,To be confirmed,1
 2020-03-20,Wales,,Resident outside Wales,2
 2020-03-20,Wales,W06000012,Neath Port Talbot,15
@@ -2943,8 +2916,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-21,Scotland,S08000022,Highland,8
 2020-03-21,Scotland,S08000032,Lanarkshire,49
 2020-03-21,Scotland,S08000024,Lothian,44
+2020-03-21,Scotland,S08000025,Orkney,NaN
 2020-03-21,Scotland,S08000026,Shetland,24
 2020-03-21,Scotland,S08000030,Tayside,34
+2020-03-21,Scotland,S08000028,Western Isles,NaN
 2020-03-21,Wales,,To be confirmed,1
 2020-03-21,Wales,,Resident outside Wales,2
 2020-03-21,Wales,W11000031,Swansea Bay,41
@@ -3113,8 +3088,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-22,Scotland,S08000022,Highland,8
 2020-03-22,Scotland,S08000032,Lanarkshire,49
 2020-03-22,Scotland,S08000024,Lothian,46
+2020-03-22,Scotland,S08000025,Orkney,NaN
 2020-03-22,Scotland,S08000026,Shetland,24
 2020-03-22,Scotland,S08000030,Tayside,38
+2020-03-22,Scotland,S08000028,Western Isles,NaN
 2020-03-22,Wales,,To be confirmed,1
 2020-03-22,Wales,,Resident outside Wales,3
 2020-03-22,Wales,W11000031,Swansea Bay,47
@@ -3283,8 +3260,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-23,Scotland,S08000022,Highland,12
 2020-03-23,Scotland,S08000032,Lanarkshire,58
 2020-03-23,Scotland,S08000024,Lothian,59
+2020-03-23,Scotland,S08000025,Orkney,NaN
 2020-03-23,Scotland,S08000026,Shetland,24
 2020-03-23,Scotland,S08000030,Tayside,47
+2020-03-23,Scotland,S08000028,Western Isles,NaN
 2020-03-23,Wales,,To be confirmed,1
 2020-03-23,Wales,,Resident outside Wales,3
 2020-03-23,Wales,W11000031,Swansea Bay,47
@@ -3453,8 +3432,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-24,Scotland,S08000022,Highland,13
 2020-03-24,Scotland,S08000032,Lanarkshire,75
 2020-03-24,Scotland,S08000024,Lothian,70
+2020-03-24,Scotland,S08000025,Orkney,NaN
 2020-03-24,Scotland,S08000026,Shetland,24
 2020-03-24,Scotland,S08000030,Tayside,48
+2020-03-24,Scotland,S08000028,Western Isles,NaN
 2020-03-24,Wales,,To be confirmed,2
 2020-03-24,Wales,,Resident outside Wales,3
 2020-03-24,Wales,W11000031,Swansea Bay,49
@@ -3623,8 +3604,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-25,Scotland,S08000022,Highland,22
 2020-03-25,Scotland,S08000032,Lanarkshire,87
 2020-03-25,Scotland,S08000024,Lothian,88
+2020-03-25,Scotland,S08000025,Orkney,NaN
 2020-03-25,Scotland,S08000026,Shetland,24
 2020-03-25,Scotland,S08000030,Tayside,57
+2020-03-25,Scotland,S08000028,Western Isles,NaN
 2020-03-25,Wales,,To be confirmed,4
 2020-03-25,Wales,,Resident outside Wales,4
 2020-03-25,Wales,W11000028,Aneurin Bevan,309
@@ -3806,8 +3789,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-26,Scotland,S08000022,Highland,29
 2020-03-26,Scotland,S08000032,Lanarkshire,114
 2020-03-26,Scotland,S08000024,Lothian,111
+2020-03-26,Scotland,S08000025,Orkney,NaN
 2020-03-26,Scotland,S08000026,Shetland,24
 2020-03-26,Scotland,S08000030,Tayside,76
+2020-03-26,Scotland,S08000028,Western Isles,NaN
 2020-03-26,Wales,W11000028,Aneurin Bevan,358
 2020-03-26,Wales,W11000023,Betsi Cadwaladr,25
 2020-03-26,Wales,W11000029,Cardiff and Vale,156
@@ -3988,8 +3973,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-27,Scotland,S08000022,Highland,33
 2020-03-27,Scotland,S08000032,Lanarkshire,140
 2020-03-27,Scotland,S08000024,Lothian,139
+2020-03-27,Scotland,S08000025,Orkney,NaN
 2020-03-27,Scotland,S08000026,Shetland,24
 2020-03-27,Scotland,S08000030,Tayside,107
+2020-03-27,Scotland,S08000028,Western Isles,NaN
 2020-03-27,Wales,W11000028,Aneurin Bevan,432
 2020-03-27,Wales,W11000023,Betsi Cadwaladr,45
 2020-03-27,Wales,W11000029,Cardiff and Vale,194
@@ -4152,14 +4139,16 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-28,Scotland,S08000016,Borders,35
 2020-03-28,Scotland,S08000017,Dumfries and Galloway,60
 2020-03-28,Scotland,S08000029,Fife,51
-2020-03-28,Scotland,S08000019,Forth Valley,95
+2020-03-28,Scotland,S08000019,Forth Valley,94
 2020-03-28,Scotland,S08000020,Grampian,52
 2020-03-28,Scotland,S08000031,Greater Glasgow and Clyde,376
 2020-03-28,Scotland,S08000022,Highland,36
 2020-03-28,Scotland,S08000032,Lanarkshire,165
 2020-03-28,Scotland,S08000024,Lothian,151
+2020-03-28,Scotland,S08000025,Orkney,NaN
 2020-03-28,Scotland,S08000026,Shetland,27
-2020-03-28,Scotland,S08000030,Tayside,107
+2020-03-28,Scotland,S08000030,Tayside,127
+2020-03-28,Scotland,S08000028,Western Isles,NaN
 2020-03-28,Wales,W11000028,Aneurin Bevan,482
 2020-03-28,Wales,W11000023,Betsi Cadwaladr,64
 2020-03-28,Wales,W11000029,Cardiff and Vale,256
@@ -4325,11 +4314,13 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-29,Scotland,S08000019,Forth Valley,94
 2020-03-29,Scotland,S08000020,Grampian,62
 2020-03-29,Scotland,S08000031,Greater Glasgow and Clyde,401
-2020-03-29,Scotland,S08000022,Highland,42
+2020-03-29,Scotland,S08000022,Highland,41
 2020-03-29,Scotland,S08000032,Lanarkshire,184
 2020-03-29,Scotland,S08000024,Lothian,188
+2020-03-29,Scotland,S08000025,Orkney,NaN
 2020-03-29,Scotland,S08000026,Shetland,27
-2020-03-29,Scotland,S08000030,Tayside,107
+2020-03-29,Scotland,S08000030,Tayside,141
+2020-03-29,Scotland,S08000028,Western Isles,NaN
 2020-03-29,Wales,W11000028,Aneurin Bevan,514
 2020-03-29,Wales,W11000023,Betsi Cadwaladr,69
 2020-03-29,Wales,W11000029,Cardiff and Vale,282
@@ -4510,8 +4501,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-30,Scotland,S08000022,Highland,44
 2020-03-30,Scotland,S08000032,Lanarkshire,197
 2020-03-30,Scotland,S08000024,Lothian,208
+2020-03-30,Scotland,S08000025,Orkney,NaN
 2020-03-30,Scotland,S08000026,Shetland,27
-2020-03-30,Scotland,S08000030,Tayside,108
+2020-03-30,Scotland,S08000030,Tayside,177
+2020-03-30,Scotland,S08000028,Western Isles,NaN
 2020-03-30,Wales,W11000028,Aneurin Bevan,565
 2020-03-30,Wales,W11000023,Betsi Cadwaladr,82
 2020-03-30,Wales,W11000029,Cardiff and Vale,344
@@ -4692,8 +4685,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-03-31,Scotland,S08000022,Highland,51
 2020-03-31,Scotland,S08000032,Lanarkshire,244
 2020-03-31,Scotland,S08000024,Lothian,269
+2020-03-31,Scotland,S08000025,Orkney,NaN
 2020-03-31,Scotland,S08000026,Shetland,29
 2020-03-31,Scotland,S08000030,Tayside,214
+2020-03-31,Scotland,S08000028,Western Isles,NaN
 2020-03-31,Wales,W11000028,Aneurin Bevan,590
 2020-03-31,Wales,W11000023,Betsi Cadwaladr,86
 2020-03-31,Wales,W11000029,Cardiff and Vale,375
@@ -4874,10 +4869,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-01,Scotland,S08000022,Highland,58
 2020-04-01,Scotland,S08000032,Lanarkshire,284
 2020-04-01,Scotland,S08000024,Lothian,311
-2020-04-01,Scotland,S08000025,Orkney,2
+2020-04-01,Scotland,S08000025,Orkney,NaN
 2020-04-01,Scotland,S08000026,Shetland,30
 2020-04-01,Scotland,S08000030,Tayside,254
-2020-04-01,Scotland,S08000028,Western Isles,3
+2020-04-01,Scotland,S08000028,Western Isles,NaN
 2020-04-01,Wales,W11000028,Aneurin Bevan,681
 2020-04-01,Wales,W11000023,Betsi Cadwaladr,91
 2020-04-01,Wales,W11000029,Cardiff and Vale,460
@@ -5058,10 +5053,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-02,Scotland,S08000022,Highland,65
 2020-04-02,Scotland,S08000032,Lanarkshire,320
 2020-04-02,Scotland,S08000024,Lothian,356
-2020-04-02,Scotland,S08000025,Orkney,2
+2020-04-02,Scotland,S08000025,Orkney,NaN
 2020-04-02,Scotland,S08000026,Shetland,30
 2020-04-02,Scotland,S08000030,Tayside,307
-2020-04-02,Scotland,S08000028,Western Isles,3
+2020-04-02,Scotland,S08000028,Western Isles,NaN
 2020-04-02,Wales,W11000028,Aneurin Bevan,766
 2020-04-02,Wales,W11000023,Betsi Cadwaladr,117
 2020-04-02,Wales,W11000029,Cardiff and Vale,528
@@ -5242,10 +5237,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-03,Scotland,S08000022,Highland,72
 2020-04-03,Scotland,S08000032,Lanarkshire,377
 2020-04-03,Scotland,S08000024,Lothian,408
-2020-04-03,Scotland,S08000025,Orkney,2
+2020-04-03,Scotland,S08000025,Orkney,NaN
 2020-04-03,Scotland,S08000026,Shetland,36
 2020-04-03,Scotland,S08000030,Tayside,353
-2020-04-03,Scotland,S08000028,Western Isles,3
+2020-04-03,Scotland,S08000028,Western Isles,NaN
 2020-04-03,Wales,W11000028,Aneurin Bevan,869
 2020-04-03,Wales,W11000023,Betsi Cadwaladr,133
 2020-04-03,Wales,W11000029,Cardiff and Vale,613
@@ -5414,10 +5409,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-04,Scotland,S08000022,Highland,85
 2020-04-04,Scotland,S08000032,Lanarkshire,427
 2020-04-04,Scotland,S08000024,Lothian,476
-2020-04-04,Scotland,S08000025,Orkney,4
+2020-04-04,Scotland,S08000025,Orkney,NaN
 2020-04-04,Scotland,S08000026,Shetland,40
 2020-04-04,Scotland,S08000030,Tayside,410
-2020-04-04,Scotland,S08000028,Western Isles,3
+2020-04-04,Scotland,S08000028,Western Isles,NaN
 2020-04-04,Wales,W11000028,Aneurin Bevan,956
 2020-04-04,Wales,W11000023,Betsi Cadwaladr,178
 2020-04-04,Wales,W11000029,Cardiff and Vale,729
@@ -5586,10 +5581,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-05,Scotland,S08000022,Highland,99
 2020-04-05,Scotland,S08000032,Lanarkshire,478
 2020-04-05,Scotland,S08000024,Lothian,534
-2020-04-05,Scotland,S08000025,Orkney,4
+2020-04-05,Scotland,S08000025,Orkney,NaN
 2020-04-05,Scotland,S08000026,Shetland,41
 2020-04-05,Scotland,S08000030,Tayside,457
-2020-04-05,Scotland,S08000028,Western Isles,4
+2020-04-05,Scotland,S08000028,Western Isles,NaN
 2020-04-05,Wales,W11000028,Aneurin Bevan,1020
 2020-04-05,Wales,W11000023,Betsi Cadwaladr,189
 2020-04-05,Wales,W11000029,Cardiff and Vale,815
@@ -5770,10 +5765,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-06,Scotland,S08000022,Highland,102
 2020-04-06,Scotland,S08000032,Lanarkshire,512
 2020-04-06,Scotland,S08000024,Lothian,577
-2020-04-06,Scotland,S08000025,Orkney,4
+2020-04-06,Scotland,S08000025,Orkney,NaN
 2020-04-06,Scotland,S08000026,Shetland,41
 2020-04-06,Scotland,S08000030,Tayside,499
-2020-04-06,Scotland,S08000028,Western Isles,4
+2020-04-06,Scotland,S08000028,Western Isles,NaN
 2020-04-06,Wales,W11000028,Aneurin Bevan,1103
 2020-04-06,Wales,W11000023,Betsi Cadwaladr,226
 2020-04-06,Wales,W11000029,Cardiff and Vale,888
@@ -5954,10 +5949,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-07,Scotland,S08000022,Highland,112
 2020-04-07,Scotland,S08000032,Lanarkshire,547
 2020-04-07,Scotland,S08000024,Lothian,621
-2020-04-07,Scotland,S08000025,Orkney,4
+2020-04-07,Scotland,S08000025,Orkney,NaN
 2020-04-07,Scotland,S08000026,Shetland,42
 2020-04-07,Scotland,S08000030,Tayside,516
-2020-04-07,Scotland,S08000028,Western Isles,4
+2020-04-07,Scotland,S08000028,Western Isles,NaN
 2020-04-07,Wales,W11000028,Aneurin Bevan,1160
 2020-04-07,Wales,W11000023,Betsi Cadwaladr,244
 2020-04-07,Wales,W11000029,Cardiff and Vale,943
@@ -6138,10 +6133,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-08,Scotland,S08000022,Highland,122
 2020-04-08,Scotland,S08000032,Lanarkshire,575
 2020-04-08,Scotland,S08000024,Lothian,700
-2020-04-08,Scotland,S08000025,Orkney,
+2020-04-08,Scotland,S08000025,Orkney,NaN
 2020-04-08,Scotland,S08000026,Shetland,43
 2020-04-08,Scotland,S08000030,Tayside,586
-2020-04-08,Scotland,S08000028,Western Isles,
+2020-04-08,Scotland,S08000028,Western Isles,NaN
 2020-04-08,Wales,W11000028,Aneurin Bevan,1211
 2020-04-08,Wales,W11000023,Betsi Cadwaladr,277
 2020-04-08,Wales,W11000029,Cardiff and Vale,1013
@@ -6322,11 +6317,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-09,Scotland,S08000022,Highland,137
 2020-04-09,Scotland,S08000032,Lanarkshire,607
 2020-04-09,Scotland,S08000024,Lothian,747
-2020-04-09,Scotland,S08000025,Orkney,
+2020-04-09,Scotland,S08000025,Orkney,NaN
 2020-04-09,Scotland,S08000026,Shetland,43
 2020-04-09,Scotland,S08000030,Tayside,667
-2020-04-09,Scotland,S08000028,Western Isles,5
-2020-04-09,Scotland,,Golden Jubilee National Hospital,
+2020-04-09,Scotland,S08000028,Western Isles,NaN
 2020-04-09,Wales,W11000028,Aneurin Bevan,1221
 2020-04-09,Wales,W11000023,Betsi Cadwaladr,279
 2020-04-09,Wales,W11000029,Cardiff and Vale,1013
@@ -6507,11 +6501,10 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-10,Scotland,S08000022,Highland,144
 2020-04-10,Scotland,S08000032,Lanarkshire,662
 2020-04-10,Scotland,S08000024,Lothian,799
-2020-04-10,Scotland,S08000025,Orkney,
+2020-04-10,Scotland,S08000025,Orkney,NaN
 2020-04-10,Scotland,S08000026,Shetland,43
 2020-04-10,Scotland,S08000030,Tayside,712
-2020-04-10,Scotland,S08000028,Western Isles,6
-2020-04-10,Scotland,,Golden Jubilee National Hospital,
+2020-04-10,Scotland,S08000028,Western Isles,NaN
 2020-04-10,Wales,W11000028,Aneurin Bevan,1311
 2020-04-10,Wales,W11000023,Betsi Cadwaladr,330
 2020-04-10,Wales,W11000029,Cardiff and Vale,1142
@@ -6684,7 +6677,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-11,Scotland,S08000026,Shetland,43
 2020-04-11,Scotland,S08000030,Tayside,753
 2020-04-11,Scotland,S08000028,Western Isles,6
-2020-04-11,Scotland,,Golden Jubilee National Hospital,
 2020-04-11,Wales,W11000028,Aneurin Bevan,1378
 2020-04-11,Wales,W11000023,Betsi Cadwaladr,370
 2020-04-11,Wales,W11000029,Cardiff and Vale,1209
@@ -6857,7 +6849,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-12,Scotland,S08000026,Shetland,43
 2020-04-12,Scotland,S08000030,Tayside,803
 2020-04-12,Scotland,S08000028,Western Isles,6
-2020-04-12,Scotland,,Golden Jubilee National Hospital,
 2020-04-12,Wales,W11000028,Aneurin Bevan,1453
 2020-04-12,Wales,W11000023,Betsi Cadwaladr,418
 2020-04-12,Wales,W11000029,Cardiff and Vale,1306
@@ -7030,7 +7021,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-13,Scotland,S08000026,Shetland,45
 2020-04-13,Scotland,S08000030,Tayside,812
 2020-04-13,Scotland,S08000028,Western Isles,6
-2020-04-13,Scotland,,Golden Jubilee National Hospital,
 2020-04-13,Wales,W11000028,Aneurin Bevan,1500
 2020-04-13,Wales,W11000023,Betsi Cadwaladr,463
 2020-04-13,Wales,W11000029,Cardiff and Vale,1380
@@ -7204,7 +7194,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-14,Scotland,S08000026,Shetland,45
 2020-04-14,Scotland,S08000030,Tayside,826
 2020-04-14,Scotland,S08000028,Western Isles,6
-2020-04-14,Scotland,,Golden Jubilee National Hospital,
 2020-04-14,Wales,W11000028,Aneurin Bevan,1550
 2020-04-14,Wales,W11000023,Betsi Cadwaladr,477
 2020-04-14,Wales,W11000029,Cardiff and Vale,1420
@@ -7390,7 +7379,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-15,Scotland,S08000026,Shetland,45
 2020-04-15,Scotland,S08000030,Tayside,898
 2020-04-15,Scotland,S08000028,Western Isles,6
-2020-04-15,Scotland,,Golden Jubilee National Hospital,
 2020-04-15,Wales,W11000028,Aneurin Bevan,1570
 2020-04-15,Wales,W11000023,Betsi Cadwaladr,544
 2020-04-15,Wales,W11000029,Cardiff and Vale,1471
@@ -7576,7 +7564,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-16,Scotland,S08000026,Shetland,45
 2020-04-16,Scotland,S08000030,Tayside,937
 2020-04-16,Scotland,S08000028,Western Isles,6
-2020-04-16,Scotland,,Golden Jubilee National Hospital,
 2020-04-16,Wales,W11000028,Aneurin Bevan,1609
 2020-04-16,Wales,W11000023,Betsi Cadwaladr,594
 2020-04-16,Wales,W11000029,Cardiff and Vale,1544
@@ -7750,7 +7737,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-17,Scotland,S08000026,Shetland,45
 2020-04-17,Scotland,S08000030,Tayside,979
 2020-04-17,Scotland,S08000028,Western Isles,6
-2020-04-17,Scotland,,Golden Jubilee National Hospital,
 2020-04-17,Wales,W11000028,Aneurin Bevan,1639
 2020-04-17,Wales,W11000023,Betsi Cadwaladr,634
 2020-04-17,Wales,W11000029,Cardiff and Vale,1609
@@ -7924,7 +7910,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-18,Scotland,S08000026,Shetland,45
 2020-04-18,Scotland,S08000030,Tayside,1022
 2020-04-18,Scotland,S08000028,Western Isles,6
-2020-04-18,Scotland,,Golden Jubilee National Hospital,
 2020-04-18,Wales,W11000028,Aneurin Bevan,1688
 2020-04-18,Wales,W11000023,Betsi Cadwaladr,679
 2020-04-18,Wales,W11000029,Cardiff and Vale,1671
@@ -8098,7 +8083,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-19,Scotland,S08000026,Shetland,51
 2020-04-19,Scotland,S08000030,Tayside,1056
 2020-04-19,Scotland,S08000028,Western Isles,6
-2020-04-19,Scotland,,Golden Jubilee National Hospital,
 2020-04-19,Wales,W11000028,Aneurin Bevan,1733
 2020-04-19,Wales,W11000023,Betsi Cadwaladr,741
 2020-04-19,Wales,W11000029,Cardiff and Vale,1727
@@ -8272,7 +8256,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-20,Scotland,S08000026,Shetland,51
 2020-04-20,Scotland,S08000030,Tayside,1071
 2020-04-20,Scotland,S08000028,Western Isles,6
-2020-04-20,Scotland,,Golden Jubilee National Hospital,
 2020-04-20,Wales,W11000028,Aneurin Bevan,1774
 2020-04-20,Wales,W11000023,Betsi Cadwaladr,782
 2020-04-20,Wales,W11000029,Cardiff and Vale,1782
@@ -8446,7 +8429,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-21,Scotland,S08000026,Shetland,52
 2020-04-21,Scotland,S08000030,Tayside,1084
 2020-04-21,Scotland,S08000028,Western Isles,6
-2020-04-21,Scotland,,Golden Jubilee National Hospital,
 2020-04-21,Wales,W11000028,Aneurin Bevan,1835
 2020-04-21,Wales,W11000023,Betsi Cadwaladr,839
 2020-04-21,Wales,W11000029,Cardiff and Vale,1828
@@ -8620,7 +8602,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-22,Scotland,S08000026,Shetland,54
 2020-04-22,Scotland,S08000030,Tayside,1124
 2020-04-22,Scotland,S08000028,Western Isles,6
-2020-04-22,Scotland,,Golden Jubilee National Hospital,
 2020-04-22,Wales,W11000028,Aneurin Bevan,1861
 2020-04-22,Wales,W11000023,Betsi Cadwaladr,913
 2020-04-22,Wales,W11000029,Cardiff and Vale,1886
@@ -8630,6 +8611,156 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-22,Wales,W11000031,Swansea Bay,1235
 2020-04-22,Wales,,Unknown location,75
 2020-04-22,Wales,,Resident outside Wales,66
+2020-04-23,England,E09000002,Barking and Dagenham,428
+2020-04-23,England,E09000003,Barnet,1119
+2020-04-23,England,E08000016,Barnsley,495
+2020-04-23,England,E06000022,Bath and North East Somerset,187
+2020-04-23,England,E06000055,Bedford,353
+2020-04-23,England,E09000004,Bexley,560
+2020-04-23,England,E08000025,Birmingham,2483
+2020-04-23,England,E06000008,Blackburn with Darwen,256
+2020-04-23,England,E06000009,Blackpool,311
+2020-04-23,England,E08000001,Bolton,623
+2020-04-23,England,E06000058,"Bournemouth, Christchurch and Poole",369
+2020-04-23,England,E06000036,Bracknell Forest,174
+2020-04-23,England,E08000032,Bradford,647
+2020-04-23,England,E09000005,Brent,1276
+2020-04-23,England,E06000043,Brighton and Hove,334
+2020-04-23,England,E06000023,"Bristol, City of",519
+2020-04-23,England,E09000006,Bromley,953
+2020-04-23,England,E10000002,Buckinghamshire,691
+2020-04-23,England,E08000002,Bury,369
+2020-04-23,England,E08000033,Calderdale,204
+2020-04-23,England,E10000003,Cambridgeshire,603
+2020-04-23,England,E09000007,Camden,537
+2020-04-23,England,E06000056,Central Bedfordshire,421
+2020-04-23,England,E06000049,Cheshire East,689
+2020-04-23,England,E06000050,Cheshire West and Chester,634
+2020-04-23,England,E09000001,City of London,16
+2020-04-23,England,E06000052,Cornwall and Isles of Scilly,436
+2020-04-23,England,E06000047,County Durham,1071
+2020-04-23,England,E08000026,Coventry,567
+2020-04-23,England,E09000008,Croydon,1253
+2020-04-23,England,E10000006,Cumbria,1584
+2020-04-23,England,E06000005,Darlington,208
+2020-04-23,England,E06000015,Derby,423
+2020-04-23,England,E10000007,Derbyshire,987
+2020-04-23,England,E10000008,Devon,594
+2020-04-23,England,E08000017,Doncaster,326
+2020-04-23,England,E06000059,Dorset,275
+2020-04-23,England,E08000027,Dudley,643
+2020-04-23,England,E09000009,Ealing,973
+2020-04-23,England,E06000011,East Riding of Yorkshire,412
+2020-04-23,England,E10000011,East Sussex,479
+2020-04-23,England,E09000010,Enfield,755
+2020-04-23,England,E10000012,Essex,2069
+2020-04-23,England,E08000037,Gateshead,668
+2020-04-23,England,E10000013,Gloucestershire,1021
+2020-04-23,England,E09000011,Greenwich,587
+2020-04-23,England,E09000012,Hackney,580
+2020-04-23,England,E06000006,Halton,283
+2020-04-23,England,E09000013,Hammersmith and Fulham,504
+2020-04-23,England,E10000014,Hampshire,2371
+2020-04-23,England,E09000014,Haringey,509
+2020-04-23,England,E09000015,Harrow,818
+2020-04-23,England,E06000001,Hartlepool,113
+2020-04-23,England,E09000016,Havering,587
+2020-04-23,England,E06000019,"Herefordshire, County of",175
+2020-04-23,England,E10000015,Hertfordshire,1996
+2020-04-23,England,E09000017,Hillingdon,667
+2020-04-23,England,E09000018,Hounslow,601
+2020-04-23,England,E06000046,Isle of Wight,76
+2020-04-23,England,E09000019,Islington,387
+2020-04-23,England,E09000020,Kensington and Chelsea,423
+2020-04-23,England,E10000016,Kent,2826
+2020-04-23,England,E06000010,"Kingston upon Hull, City of",320
+2020-04-23,England,E09000021,Kingston upon Thames,401
+2020-04-23,England,E08000034,Kirklees,466
+2020-04-23,England,E08000011,Knowsley,440
+2020-04-23,England,E09000022,Lambeth,1063
+2020-04-23,England,E10000017,Lancashire,2305
+2020-04-23,England,E08000035,Leeds,1049
+2020-04-23,England,E06000016,Leicester,545
+2020-04-23,England,E10000018,Leicestershire,776
+2020-04-23,England,E09000023,Lewisham,854
+2020-04-23,England,E10000019,Lincolnshire,712
+2020-04-23,England,E08000012,Liverpool,1234
+2020-04-23,England,E06000032,Luton,548
+2020-04-23,England,E08000003,Manchester,929
+2020-04-23,England,E06000035,Medway,548
+2020-04-23,England,E09000024,Merton,615
+2020-04-23,England,E06000002,Middlesbrough,427
+2020-04-23,England,E06000042,Milton Keynes,403
+2020-04-23,England,E08000021,Newcastle upon Tyne,781
+2020-04-23,England,E09000025,Newham,898
+2020-04-23,England,E10000020,Norfolk,1169
+2020-04-23,England,E06000012,North East Lincolnshire,109
+2020-04-23,England,E06000013,North Lincolnshire,244
+2020-04-23,England,E06000024,North Somerset,183
+2020-04-23,England,E08000022,North Tyneside,412
+2020-04-23,England,E10000023,North Yorkshire,718
+2020-04-23,England,E10000021,Northamptonshire,952
+2020-04-23,England,E06000057,Northumberland,668
+2020-04-23,England,E06000018,Nottingham,448
+2020-04-23,England,E10000024,Nottinghamshire,946
+2020-04-23,England,E08000004,Oldham,509
+2020-04-23,England,E10000025,Oxfordshire,1314
+2020-04-23,England,E06000031,Peterborough,171
+2020-04-23,England,E06000026,Plymouth,246
+2020-04-23,England,E06000044,Portsmouth,238
+2020-04-23,England,E06000038,Reading,369
+2020-04-23,England,E09000026,Redbridge,625
+2020-04-23,England,E06000003,Redcar and Cleveland,239
+2020-04-23,England,E09000027,Richmond upon Thames,347
+2020-04-23,England,E08000005,Rochdale,358
+2020-04-23,England,E08000018,Rotherham,537
+2020-04-23,England,E06000017,Rutland,13
+2020-04-23,England,E08000006,Salford,503
+2020-04-23,England,E08000028,Sandwell,831
+2020-04-23,England,E08000014,Sefton,699
+2020-04-23,England,E08000019,Sheffield,1751
+2020-04-23,England,E06000051,Shropshire,398
+2020-04-23,England,E06000039,Slough,325
+2020-04-23,England,E08000029,Solihull,476
+2020-04-23,England,E10000027,Somerset,401
+2020-04-23,England,E06000025,South Gloucestershire,304
+2020-04-23,England,E08000023,South Tyneside,425
+2020-04-23,England,E06000045,Southampton,398
+2020-04-23,England,E06000033,Southend-on-Sea,266
+2020-04-23,England,E09000028,Southwark,1126
+2020-04-23,England,E08000013,St. Helens,510
+2020-04-23,England,E10000028,Staffordshire,1405
+2020-04-23,England,E08000007,Stockport,699
+2020-04-23,England,E06000004,Stockton-on-Tees,280
+2020-04-23,England,E06000021,Stoke-on-Trent,345
+2020-04-23,England,E10000029,Suffolk,814
+2020-04-23,England,E08000024,Sunderland,1026
+2020-04-23,England,E10000030,Surrey,2176
+2020-04-23,England,E09000029,Sutton,609
+2020-04-23,England,E06000030,Swindon,307
+2020-04-23,England,E08000008,Tameside,394
+2020-04-23,England,E06000020,Telford and Wrekin,205
+2020-04-23,England,E06000034,Thurrock,244
+2020-04-23,England,E06000027,Torbay,169
+2020-04-23,England,E09000030,Tower Hamlets,578
+2020-04-23,England,E08000009,Trafford,504
+2020-04-23,England,E08000036,Wakefield,441
+2020-04-23,England,E08000030,Walsall,753
+2020-04-23,England,E09000031,Waltham Forest,677
+2020-04-23,England,E09000032,Wandsworth,871
+2020-04-23,England,E06000007,Warrington,497
+2020-04-23,England,E10000031,Warwickshire,955
+2020-04-23,England,E06000037,West Berkshire,256
+2020-04-23,England,E10000032,West Sussex,943
+2020-04-23,England,E09000033,Westminster,570
+2020-04-23,England,E08000010,Wigan,505
+2020-04-23,England,E06000054,Wiltshire,400
+2020-04-23,England,E06000040,Windsor and Maidenhead,206
+2020-04-23,England,E08000015,Wirral,847
+2020-04-23,England,E06000041,Wokingham,285
+2020-04-23,England,E08000031,Wolverhampton,640
+2020-04-23,England,E10000034,Worcestershire,985
+2020-04-23,England,E06000014,York,209
 2020-04-23,Scotland,S08000015,Ayrshire and Arran,653
 2020-04-23,Scotland,S08000016,Borders,248
 2020-04-23,Scotland,S08000017,Dumfries and Galloway,235
@@ -8644,7 +8775,6 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-23,Scotland,S08000026,Shetland,54
 2020-04-23,Scotland,S08000030,Tayside,1159
 2020-04-23,Scotland,S08000028,Western Isles,6
-2020-04-23,Scotland,,Golden Jubilee National Hospital,
 2020-04-23,Wales,W11000028,Aneurin Bevan,1885
 2020-04-23,Wales,W11000023,Betsi Cadwaladr,941
 2020-04-23,Wales,W11000029,Cardiff and Vale,1934
@@ -8654,3 +8784,176 @@ Date,Country,AreaCode,Area,TotalCases
 2020-04-23,Wales,W11000031,Swansea Bay,1275
 2020-04-23,Wales,,Unknown location,72
 2020-04-23,Wales,,Resident outside Wales,69
+2020-04-24,England,E09000002,Barking and Dagenham,437
+2020-04-24,England,E09000003,Barnet,1134
+2020-04-24,England,E08000016,Barnsley,530
+2020-04-24,England,E06000022,Bath and North East Somerset,192
+2020-04-24,England,E06000055,Bedford,361
+2020-04-24,England,E09000004,Bexley,561
+2020-04-24,England,E08000025,Birmingham,2552
+2020-04-24,England,E06000008,Blackburn with Darwen,265
+2020-04-24,England,E06000009,Blackpool,333
+2020-04-24,England,E08000001,Bolton,643
+2020-04-24,England,E06000058,"Bournemouth, Christchurch and Poole",371
+2020-04-24,England,E06000036,Bracknell Forest,183
+2020-04-24,England,E08000032,Bradford,669
+2020-04-24,England,E09000005,Brent,1289
+2020-04-24,England,E06000043,Brighton and Hove,337
+2020-04-24,England,E06000023,"Bristol, City of",543
+2020-04-24,England,E09000006,Bromley,959
+2020-04-24,England,E10000002,Buckinghamshire,709
+2020-04-24,England,E08000002,Bury,382
+2020-04-24,England,E08000033,Calderdale,210
+2020-04-24,England,E10000003,Cambridgeshire,624
+2020-04-24,England,E09000007,Camden,543
+2020-04-24,England,E06000056,Central Bedfordshire,427
+2020-04-24,England,E06000049,Cheshire East,702
+2020-04-24,England,E06000050,Cheshire West and Chester,665
+2020-04-24,England,E09000001,City of London,16
+2020-04-24,England,E06000052,Cornwall and Isles of Scilly,444
+2020-04-24,England,E06000047,County Durham,1115
+2020-04-24,England,E08000026,Coventry,591
+2020-04-24,England,E09000008,Croydon,1268
+2020-04-24,England,E10000006,Cumbria,1633
+2020-04-24,England,E06000005,Darlington,218
+2020-04-24,England,E06000015,Derby,431
+2020-04-24,England,E10000007,Derbyshire,1038
+2020-04-24,England,E10000008,Devon,604
+2020-04-24,England,E08000017,Doncaster,350
+2020-04-24,England,E06000059,Dorset,272
+2020-04-24,England,E08000027,Dudley,653
+2020-04-24,England,E09000009,Ealing,988
+2020-04-24,England,E06000011,East Riding of Yorkshire,429
+2020-04-24,England,E10000011,East Sussex,491
+2020-04-24,England,E09000010,Enfield,763
+2020-04-24,England,E10000012,Essex,2119
+2020-04-24,England,E08000037,Gateshead,698
+2020-04-24,England,E10000013,Gloucestershire,1053
+2020-04-24,England,E09000011,Greenwich,592
+2020-04-24,England,E09000012,Hackney,586
+2020-04-24,England,E06000006,Halton,293
+2020-04-24,England,E09000013,Hammersmith and Fulham,524
+2020-04-24,England,E10000014,Hampshire,2439
+2020-04-24,England,E09000014,Haringey,514
+2020-04-24,England,E09000015,Harrow,841
+2020-04-24,England,E06000001,Hartlepool,131
+2020-04-24,England,E09000016,Havering,601
+2020-04-24,England,E06000019,"Herefordshire, County of",198
+2020-04-24,England,E10000015,Hertfordshire,2034
+2020-04-24,England,E09000017,Hillingdon,680
+2020-04-24,England,E09000018,Hounslow,613
+2020-04-24,England,E06000046,Isle of Wight,82
+2020-04-24,England,E09000019,Islington,389
+2020-04-24,England,E09000020,Kensington and Chelsea,429
+2020-04-24,England,E10000016,Kent,2959
+2020-04-24,England,E06000010,"Kingston upon Hull, City of",342
+2020-04-24,England,E09000021,Kingston upon Thames,411
+2020-04-24,England,E08000034,Kirklees,473
+2020-04-24,England,E08000011,Knowsley,471
+2020-04-24,England,E09000022,Lambeth,1071
+2020-04-24,England,E10000017,Lancashire,2381
+2020-04-24,England,E08000035,Leeds,1111
+2020-04-24,England,E06000016,Leicester,560
+2020-04-24,England,E10000018,Leicestershire,802
+2020-04-24,England,E09000023,Lewisham,857
+2020-04-24,England,E10000019,Lincolnshire,725
+2020-04-24,England,E08000012,Liverpool,1257
+2020-04-24,England,E06000032,Luton,554
+2020-04-24,England,E08000003,Manchester,951
+2020-04-24,England,E06000035,Medway,557
+2020-04-24,England,E09000024,Merton,621
+2020-04-24,England,E06000002,Middlesbrough,451
+2020-04-24,England,E06000042,Milton Keynes,412
+2020-04-24,England,E08000021,Newcastle upon Tyne,790
+2020-04-24,England,E09000025,Newham,912
+2020-04-24,England,E10000020,Norfolk,1208
+2020-04-24,England,E06000012,North East Lincolnshire,114
+2020-04-24,England,E06000013,North Lincolnshire,257
+2020-04-24,England,E06000024,North Somerset,190
+2020-04-24,England,E08000022,North Tyneside,421
+2020-04-24,England,E10000023,North Yorkshire,740
+2020-04-24,England,E10000021,Northamptonshire,966
+2020-04-24,England,E06000057,Northumberland,681
+2020-04-24,England,E06000018,Nottingham,451
+2020-04-24,England,E10000024,Nottinghamshire,953
+2020-04-24,England,E08000004,Oldham,529
+2020-04-24,England,E10000025,Oxfordshire,1336
+2020-04-24,England,E06000031,Peterborough,185
+2020-04-24,England,E06000026,Plymouth,256
+2020-04-24,England,E06000044,Portsmouth,249
+2020-04-24,England,E06000038,Reading,402
+2020-04-24,England,E09000026,Redbridge,639
+2020-04-24,England,E06000003,Redcar and Cleveland,259
+2020-04-24,England,E09000027,Richmond upon Thames,349
+2020-04-24,England,E08000005,Rochdale,382
+2020-04-24,England,E08000018,Rotherham,573
+2020-04-24,England,E06000017,Rutland,15
+2020-04-24,England,E08000006,Salford,514
+2020-04-24,England,E08000028,Sandwell,856
+2020-04-24,England,E08000014,Sefton,724
+2020-04-24,England,E08000019,Sheffield,1856
+2020-04-24,England,E06000051,Shropshire,402
+2020-04-24,England,E06000039,Slough,341
+2020-04-24,England,E08000029,Solihull,487
+2020-04-24,England,E10000027,Somerset,424
+2020-04-24,England,E06000025,South Gloucestershire,311
+2020-04-24,England,E08000023,South Tyneside,442
+2020-04-24,England,E06000045,Southampton,411
+2020-04-24,England,E06000033,Southend-on-Sea,271
+2020-04-24,England,E09000028,Southwark,1137
+2020-04-24,England,E08000013,St. Helens,556
+2020-04-24,England,E10000028,Staffordshire,1455
+2020-04-24,England,E08000007,Stockport,717
+2020-04-24,England,E06000004,Stockton-on-Tees,303
+2020-04-24,England,E06000021,Stoke-on-Trent,361
+2020-04-24,England,E10000029,Suffolk,850
+2020-04-24,England,E08000024,Sunderland,1037
+2020-04-24,England,E10000030,Surrey,2288
+2020-04-24,England,E09000029,Sutton,622
+2020-04-24,England,E06000030,Swindon,322
+2020-04-24,England,E08000008,Tameside,407
+2020-04-24,England,E06000020,Telford and Wrekin,210
+2020-04-24,England,E06000034,Thurrock,245
+2020-04-24,England,E06000027,Torbay,177
+2020-04-24,England,E09000030,Tower Hamlets,582
+2020-04-24,England,E08000009,Trafford,525
+2020-04-24,England,E08000036,Wakefield,448
+2020-04-24,England,E08000030,Walsall,778
+2020-04-24,England,E09000031,Waltham Forest,683
+2020-04-24,England,E09000032,Wandsworth,880
+2020-04-24,England,E06000007,Warrington,516
+2020-04-24,England,E10000031,Warwickshire,976
+2020-04-24,England,E06000037,West Berkshire,276
+2020-04-24,England,E10000032,West Sussex,974
+2020-04-24,England,E09000033,Westminster,572
+2020-04-24,England,E08000010,Wigan,529
+2020-04-24,England,E06000054,Wiltshire,369
+2020-04-24,England,E06000040,Windsor and Maidenhead,217
+2020-04-24,England,E08000015,Wirral,877
+2020-04-24,England,E06000041,Wokingham,311
+2020-04-24,England,E08000031,Wolverhampton,656
+2020-04-24,England,E10000034,Worcestershire,997
+2020-04-24,England,E06000014,York,224
+2020-04-24,Scotland,S08000015,Ayrshire and Arran,678
+2020-04-24,Scotland,S08000016,Borders,253
+2020-04-24,Scotland,S08000017,Dumfries and Galloway,235
+2020-04-24,Scotland,S08000029,Fife,637
+2020-04-24,Scotland,S08000019,Forth Valley,606
+2020-04-24,Scotland,S08000020,Grampian,638
+2020-04-24,Scotland,S08000031,Greater Glasgow and Clyde,2311
+2020-04-24,Scotland,S08000022,Highland,214
+2020-04-24,Scotland,S08000032,Lanarkshire,1176
+2020-04-24,Scotland,S08000024,Lothian,1684
+2020-04-24,Scotland,S08000025,Orkney,6
+2020-04-24,Scotland,S08000026,Shetland,54
+2020-04-24,Scotland,S08000030,Tayside,1199
+2020-04-24,Scotland,S08000028,Western Isles,6
+2020-04-24,Wales,W11000028,Aneurin Bevan,1937
+2020-04-24,Wales,W11000023,Betsi Cadwaladr,997
+2020-04-24,Wales,W11000029,Cardiff and Vale,1971
+2020-04-24,Wales,W11000030,Cwm Taf,1462
+2020-04-24,Wales,W11000025,Hywel Dda,630
+2020-04-24,Wales,W11000024,Powys,147
+2020-04-24,Wales,W11000031,Swansea Bay,1311
+2020-04-24,Wales,,Unknown location,74
+2020-04-24,Wales,,Resident outside Wales,72
