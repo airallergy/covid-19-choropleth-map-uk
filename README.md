@@ -6,6 +6,14 @@
 ## London latest COVID-19 cases breakdown
 ![alt text](london_cases_latest.png "London latest COVID-19 cases breakdown")
 
+## Map notes
+
+### Breakdown region level
+* England: Ceremonial County (Data for Greater London and City of London are combined)
+* Wales: Local Government
+* Scotland: Health Board
+* Northern Ireland: Country
+
 ## Data source
 
 ### Geometry
