@@ -7,29 +7,29 @@ from matplotlib.font_manager import FontProperties
 from mapclassify import UserDefined
 from pyproj import Proj, transform
 from geopandas.plotting import _flatten_multi_geoms, _mapclassify_choro
-from util import getAbbrv, calBoundariesScale
+from util import getAbbrv, calBinsScale, calBinsBoundary
 
 
-def plotCase(ax, caseGeo, caseDate, boundariesScale=None):
+def plotCase(ax, caseGeo, caseDate, binsBoundary=None):
     '''
     plot the choropleth map
     '''
     ax.axis('off')
     ax.set_aspect('equal')
 
-    if boundariesScale is None:
-        boundariesScale = calBoundariesScale(caseGeo[caseDate])
-    bins = boundariesScale[1:] - 0.01
+    if binsBoundary is None:
+        binsBoundary = calBinsBoundary(calBinsScale(caseGeo[caseDate]))
+    bins = binsBoundary[1:] - 0.01
 
     cmap = 'OrRd'
     ncolor = 256
     norm = mcolors.BoundaryNorm(
-        boundariesScale, ncolor, clip=True)  # norm takes (..., ...]
+        binsBoundary, ncolor, clip=True)  # norm takes (..., ...]
 
     pc = PatchCollection([], edgecolors='none', cmap=cmap, norm=norm)
 
-    binsTextsLeft = boundariesScale.astype(int).astype(str)
-    binsTextsRight = (boundariesScale - 1).astype(int).astype(str)
+    binsTextsLeft = binsBoundary.astype(int).astype(str)
+    binsTextsRight = (binsBoundary - 1).astype(int).astype(str)
     binsTexts = zip(binsTextsLeft[1:-2], binsTextsRight[2:-1])
     texts = ['0'] + ['{:s} - {:s}'.format(i, j)
                      for i, j in binsTexts] + ['≥ ' + binsTextsLeft[-2]]
@@ -61,7 +61,7 @@ def plotCase(ax, caseGeo, caseDate, boundariesScale=None):
         },
         cmap=cmap,
         norm=mcolors.BoundaryNorm(
-            np.arange(len(boundariesScale)), ncolor, clip=True),
+            np.arange(len(binsBoundary)), ncolor, clip=True),
         edgecolor='grey',
         linewidths=0.05,
         zorder=1

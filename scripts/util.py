@@ -9,13 +9,20 @@ def getAbbrv():
     return nameAbbrvDict
 
 
-def calBoundariesScale(caseNo):
-    '''
-    calculate the bins scale
-    '''
+def calBinsScale(caseNo):
     caseNoMax = caseNo.max()
-    caseNoMax4thRoot = np.sqrt(np.sqrt(caseNoMax))
-    caseNoMax4thRootFloor = np.floor(caseNoMax4thRoot)
-    binsBase = caseNoMax4thRootFloor if caseNoMax4thRootFloor < 10 else 10
-    boundariesScale = np.float_power(binsBase, [-1, 0, 1, 2, 3, 4, 5])
-    return boundariesScale
+    binsNo = 5.0
+    if caseNoMax < np.float_power(10, binsNo - 2):
+        caseNoMax3rdRootFloor = np.floor(np.cbrt(caseNoMax))
+        binsBase = caseNoMax3rdRootFloor
+    else:
+        binsBase = 10.0
+        caseNoMaxLog10 = np.log10(caseNoMax)
+        binsNo = np.floor(caseNoMaxLog10) + 2
+    return binsBase, binsNo
+
+
+def calBinsBoundary(binsScale):
+    binsBase, binsNo = binsScale
+    binsBoundary = np.float_power(binsBase, np.arange(-1, binsNo))
+    return binsBoundary

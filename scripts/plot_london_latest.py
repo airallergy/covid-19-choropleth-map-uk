@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 from process_data import getData
-from util import calBoundariesScale
+from util import calBinsBoundary, calBinsScale
 from plot import plotCase, plotName
 
 
