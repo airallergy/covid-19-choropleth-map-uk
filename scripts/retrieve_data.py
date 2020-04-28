@@ -9,9 +9,10 @@ fileLinks = {
 }
 
 
-def saveLink(fileLink, filePath):
+def downloadFile(fileLink, fileDir, filename):
     response = requests.get(fileLink, stream=True)
-    filePath += '.' + fileLink.split('.')[-1]
+    fileExtension = '.' + fileLink.split('.')[-1]
+    filePath = os.path.join(fileDir, filename + fileExtension)
     with open(filePath, 'wb') as f:
         for chunk in response.iter_content(1024):
             f.write(chunk)
@@ -19,12 +20,7 @@ def saveLink(fileLink, filePath):
 
 def retrieveData(country):
     country = country.lower()
-    filePath = os.path.join('data/csv/src', 'data_latest_' + country)
     fileLink = fileLinks[country]
-    saveLink(fileLink, filePath)
-
-
-retrieveData('Eng')
-retrieveData('Wls')
-retrieveData('Sct')
-retrieveData('Nir')
+    fileDir = 'data/csv/src'
+    filename = 'data_latest_' + country
+    downloadFile(fileLink, fileDir, filename)

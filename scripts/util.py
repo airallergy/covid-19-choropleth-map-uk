@@ -2,11 +2,25 @@ import pandas as pd
 import numpy as np
 
 
+def getCode():
+    nameCode = pd.read_csv('data/csv/name_code.csv')
+    nameCodeDict = pd.Series(nameCode['code'].values,
+                             index=nameCode['name']).to_dict()
+    return nameCodeDict
+
+
 def getAbbrv():
     nameAbbrv = pd.read_csv('data/csv/name_abbrv.csv')
     nameAbbrvDict = pd.Series(nameAbbrv.countyNameAbbrv.values,
                               index=nameAbbrv.countyName).to_dict()
     return nameAbbrvDict
+
+
+def getGroup():
+    codeGroup = pd.read_csv('data/csv/code_group.csv')
+    codeGroupDict = pd.Series(codeGroup['group'].values,
+                              index=codeGroup['code']).to_dict()
+    return codeGroupDict
 
 
 def calBinsScale(caseNo):

@@ -33,18 +33,19 @@ def adjustNameLdn(xcoord, ycoord, name):
     return xcoord, ycoord, name, font
 
 
-# plot latest london cases breakdown
-fig, ax = plt.subplots(1, figsize=(6, 4))
+def plot_ldn_latest():
+    # plot latest london cases breakdown
+    fig, ax = plt.subplots(1, figsize=(6, 4))
 
-caseDates, caseGeo = getData(loc='London')
-caseDate = caseDates[-1]
-plotCase(ax, caseGeo, caseDate)
-plotName(caseGeo, adjustNameLdn)
-plt.text(
-    0.1, 0.05,
-    caseDate.strftime('%d %b %Y'),
-    transform=ax.transAxes,
-    fontproperties=FontProperties(family='Palatino', size=8)
-)
+    caseDates, caseGeo = getData(loc='London')
+    caseDate = caseDates[-1]
+    plotCase(ax, caseGeo, caseDate)
+    plotName(caseGeo, adjustNameLdn)
+    plt.text(
+        0.1, 0.05,
+        caseDate.strftime('%d %b %Y'),
+        transform=ax.transAxes,
+        fontproperties=FontProperties(family='Palatino', size=8)
+    )
 
-plt.savefig('london_cases_latest.png', dpi=300, transparent=False)
+    plt.savefig('london_cases_latest.png', dpi=300, transparent=False)
