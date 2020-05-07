@@ -48,4 +48,4 @@ def plot_ldn_latest():
         fontproperties=FontProperties(family='Palatino', size=8)
     )
 
-    plt.savefig('london_cases_latest.png', dpi=300, transparent=False)
+    plt.savefig('docs/img/london_cases_latest.png', dpi=300, transparent=False)

@@ -71,4 +71,4 @@ def plot_uk_latest():
         fontproperties=FontProperties(family='Palatino', size=8)
     )
 
-    plt.savefig('uk_cases_latest.png', dpi=1200, transparent=False)
+    plt.savefig('docs/img/uk_cases_latest.png', dpi=1200, transparent=False)
