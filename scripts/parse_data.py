@@ -19,11 +19,26 @@ def cleanDataWls():
     return df
 
 
+# def cleanDataSct():
+#     df = pd.read_csv('data/csv/src/data_latest_sct.csv', usecols=['Date', 'Country', 'Area', 'TotalCases']).rename(
+#         columns={'Area': 'name', 'Country': 'group', 'Date': 'date', 'TotalCases': 'cases'})
+#     df = df[df['group'] == 'Scotland'].drop(columns=['group'])
+#     df = df[df['name'] != 'Golden Jubilee National Hospital']
+#     return df
+
 def cleanDataSct():
-    df = pd.read_csv('data/csv/src/data_latest_sct.csv', usecols=['Date', 'Country', 'Area', 'TotalCases']).rename(
-        columns={'Area': 'name', 'Country': 'group', 'Date': 'date', 'TotalCases': 'cases'})
-    df = df[df['group'] == 'Scotland'].drop(columns=['group'])
-    df = df[df['name'] != 'Golden Jubilee National Hospital']
+    df = pd.read_excel('data/csv/src/data_latest_sct.xlsx', sheet_name='Table 1 - Cumulative cases',
+                       header=2).drop(columns='Scotland').set_index('Date').transpose()
+    df = df.stack().reset_index()
+    df.columns = ['name', 'date', 'cases']
+    df['name'] = [name.split('NHS ')[1].replace('&', 'and')
+                  for name in df['name']]
+    df['cases'] = pd.to_numeric(df['cases'], errors='coerce')
+    df = df[df['cases'].notna()]
+    dfArchive = pd.read_csv(
+        'data/csv/archive/data_archive_sct.csv', parse_dates=['date'], dayfirst=True)
+    df = df.append(dfArchive)
+    df = df.sort_values(by=['name', 'date'], ignore_index=True)
     return df
 
 

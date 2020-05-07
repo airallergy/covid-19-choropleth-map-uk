@@ -22,6 +22,6 @@
 
 ### Cases number
 * England: [Coronavirus (COVID-19) cases in the UK](https://coronavirus.data.gov.uk)
-* Scotland: [tomwhite/covid-19-uk-data](https://github.com/tomwhite/covid-19-uk-data), [Coronavirus (COVID-19) daily data for Scotland](https://www.gov.scot/publications/coronavirus-covid-19-daily-data-for-scotland/)
-* Wales: [Rapid COVID-19 virology](https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary)
+* Wales: [Public Health Wales Rapid COVID-19 Surveillance](https://public.tableau.com/profile/public.health.wales.health.protection#!/vizhome/RapidCOVID-19virology-Public/Headlinesummary)
+* Scotland: [Coronavirus (COVID-19): trends in daily data](https://www.gov.scot/publications/trends-in-number-of-people-in-hospital-with-confirmed-or-suspected-covid-19/), Cached [Coronavirus (COVID-19): daily data for Scotland](https://www.gov.scot/publications/coronavirus-covid-19-daily-data-for-scotland/)
 * Northern Ireland: [tomwhite/covid-19-uk-data](https://github.com/tomwhite/covid-19-uk-data)
