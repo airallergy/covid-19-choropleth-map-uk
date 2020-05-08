@@ -70,7 +70,8 @@ def plot_uk_latest():
             0.2, 0.1,
             caseDate.strftime('%d %b %Y'),
             transform=ax.transAxes,
-            fontproperties=FontProperties(family='Palatino', size=8)
+            fontproperties=FontProperties(family='Palatino', size=8),
+            label='dateText'
         )
         with open(plotPicklePath, 'wb') as f:
             pickle.dump(ax, f, pickle.HIGHEST_PROTOCOL)

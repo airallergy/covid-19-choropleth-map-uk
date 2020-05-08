@@ -49,7 +49,8 @@ def plot_ldn_latest():
             0.1, 0.05,
             caseDate.strftime('%d %b %Y'),
             transform=ax.transAxes,
-            fontproperties=FontProperties(family='Palatino', size=8)
+            fontproperties=FontProperties(family='Palatino', size=8),
+            label='dateText'
         )
         with open(plotPicklePath, 'wb') as f:
             pickle.dump(ax, f, pickle.HIGHEST_PROTOCOL)

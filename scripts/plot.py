@@ -68,7 +68,8 @@ def plotCase(ax, caseGeo, caseDate, binsScale=None):
             np.arange(len(binsBoundary)), ncolor, clip=True),
         edgecolor='grey',
         linewidths=0.05,
-        zorder=1
+        zorder=1,
+        label='plotPC'
     )
 
 
@@ -102,6 +103,8 @@ def plotCasePickle(binsScale, caseGeo, caseDate, plotPicklePath):
     values = np.take(binning.yb, multiindex, axis=0)
     geoms, multiindex = _flatten_multi_geoms(gpd.GeoSeries(geoms))
     values = np.take(values, multiindex, axis=0)
-    # print(ax.get_children())
-    ax.get_children()[0].set_array(values)
-    ax.get_children()[-12].set_text(caseDate.strftime('%d %b %Y'))
+    for item in ax.get_children():
+        if item.get_label() == 'plotPC':
+            item.set_array(values)
+        if item.get_label() == 'dateText':
+            item.set_text(caseDate.strftime('%d %b %Y'))
