@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
-from process_data import getData
-from util import calBinsBoundary, calBinsScale
-from plot import plotCase, plotName
+import pickle
+from process_data import getData, getGeoIreland
+from util import calBinsScale, getPlotPicklePath, checkPlotPickle
+from plot import plotCase, plotName, plotCasePickle
 
 
 def adjustNameLdn(xcoord, ycoord, name):
@@ -34,18 +35,25 @@ def adjustNameLdn(xcoord, ycoord, name):
 
 
 def plot_ldn_latest():
-    # plot latest london cases breakdown
     fig, ax = plt.subplots(1, figsize=(6, 4))
 
     caseDates, caseGeo = getData(loc='London')
-    caseDate = caseDates[-1]
-    plotCase(ax, caseGeo, caseDate)
-    plotName(caseGeo, adjustNameLdn)
-    plt.text(
-        0.1, 0.05,
-        caseDate.strftime('%d %b %Y'),
-        transform=ax.transAxes,
-        fontproperties=FontProperties(family='Palatino', size=8)
-    )
+
+    binsScale = calBinsScale(caseGeo[caseDates[-1]])
+    plotPicklePath = getPlotPicklePath(binsScale, loc='London')
+    if not checkPlotPickle(binsScale, loc='London'):
+        caseDate = caseDates[-1]
+        plotCase(ax, caseGeo, caseDate)
+        plotName(caseGeo, adjustNameLdn)
+        plt.text(
+            0.1, 0.05,
+            caseDate.strftime('%d %b %Y'),
+            transform=ax.transAxes,
+            fontproperties=FontProperties(family='Palatino', size=8)
+        )
+        with open(plotPicklePath, 'wb') as f:
+            pickle.dump(ax, f, pickle.HIGHEST_PROTOCOL)
+    else:
+        plotCasePickle(binsScale, caseGeo, caseDates[-1], plotPicklePath)
 
     plt.savefig('docs/img/london_cases_latest.png', dpi=300, transparent=False)

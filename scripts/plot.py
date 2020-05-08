@@ -6,19 +6,23 @@ from matplotlib.font_manager import FontProperties
 # from matplotlib.animation import FuncAnimation, writers
 from mapclassify import UserDefined
 from pyproj import Proj, transform
+import pickle
+import geopandas as gpd
 from geopandas.plotting import _flatten_multi_geoms, _mapclassify_choro
 from util import getAbbrv, calBinsScale, calBinsBoundary
 
 
-def plotCase(ax, caseGeo, caseDate, binsBoundary=None):
+def plotCase(ax, caseGeo, caseDate, binsScale=None):
     '''
     plot the choropleth map
     '''
+    if binsScale is None:
+        binsScale = calBinsScale(caseGeo[caseDate])
+
     ax.axis('off')
     ax.set_aspect('equal')
 
-    if binsBoundary is None:
-        binsBoundary = calBinsBoundary(calBinsScale(caseGeo[caseDate]))
+    binsBoundary = calBinsBoundary(binsScale)
     bins = binsBoundary[1:] - 0.01
 
     cmap = 'OrRd'
@@ -84,3 +88,20 @@ def plotName(caseGeo, adjustName):
             init='epsg:3857'), xcoord, ycoord)
         plt.annotate(s=s, xy=xy, horizontalalignment='center',
                      verticalalignment='center', fontproperties=font)
+
+
+def plotCasePickle(binsScale, caseGeo, caseDate, plotPicklePath):
+    with open(plotPicklePath, 'rb') as f:
+        ax = pickle.load(f)
+    binsBoundary = calBinsBoundary(binsScale)
+    bins = binsBoundary[1:] - 0.01
+    geoms, multiindex = _flatten_multi_geoms(
+        caseGeo.geometry, prefix="Geom")
+    binning = _mapclassify_choro(
+        caseGeo.loc[:, caseDate], scheme='user_defined', bins=bins, k=len(bins))
+    values = np.take(binning.yb, multiindex, axis=0)
+    geoms, multiindex = _flatten_multi_geoms(gpd.GeoSeries(geoms))
+    values = np.take(values, multiindex, axis=0)
+    # print(ax.get_children())
+    ax.get_children()[0].set_array(values)
+    ax.get_children()[-12].set_text(caseDate.strftime('%d %b %Y'))

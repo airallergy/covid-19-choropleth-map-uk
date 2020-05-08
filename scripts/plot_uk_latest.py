@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
+import pickle
 from process_data import getData, getGeoIreland
-from util import calBinsBoundary, calBinsScale
-from plot import plotCase, plotName
+from util import calBinsScale, getPlotPicklePath, checkPlotPickle
+from plot import plotCase, plotName, plotCasePickle
 
 
 def adjustNameUK(xcoord, ycoord, name):
@@ -52,23 +53,28 @@ def adjustNameUK(xcoord, ycoord, name):
 
 
 def plot_uk_latest():
-    '''
-    plot latest london cases breakdown
-    '''
     fig, ax = plt.subplots(1, figsize=(6, 9))
 
-    countryIreGeo = getGeoIreland()
-    countryIreGeo.to_crs(epsg=3857).plot(
-        ax=ax, color='silver', edgecolor='grey', linewidths=0.05)
     caseDates, caseGeo = getData(loc='UK')
-    caseDate = caseDates[-1]
-    plotCase(ax, caseGeo, caseDate)
-    plotName(caseGeo, adjustNameUK)
-    plt.text(
-        0.2, 0.1,
-        caseDate.strftime('%d %b %Y'),
-        transform=ax.transAxes,
-        fontproperties=FontProperties(family='Palatino', size=8)
-    )
+    countryIreGeo = getGeoIreland()
+
+    binsScale = calBinsScale(caseGeo[caseDates[-1]])
+    plotPicklePath = getPlotPicklePath(binsScale, loc='UK')
+    if not checkPlotPickle(binsScale, loc='UK'):
+        caseDate = caseDates[-1]
+        plotCase(ax, caseGeo, caseDate)
+        countryIreGeo.to_crs(epsg=3857).plot(
+            ax=ax, color='silver', edgecolor='grey', linewidths=0.05)
+        plotName(caseGeo, adjustNameUK)
+        plt.text(
+            0.2, 0.1,
+            caseDate.strftime('%d %b %Y'),
+            transform=ax.transAxes,
+            fontproperties=FontProperties(family='Palatino', size=8)
+        )
+        with open(plotPicklePath, 'wb') as f:
+            pickle.dump(ax, f, pickle.HIGHEST_PROTOCOL)
+    else:
+        plotCasePickle(binsScale, caseGeo, caseDates[-1], plotPicklePath)
 
     plt.savefig('docs/img/uk_cases_latest.png', dpi=1200, transparent=False)

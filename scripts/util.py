@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import sys
+import os
 
 
 def getCode():
@@ -40,3 +42,21 @@ def calBinsBoundary(binsScale):
     binsBase, binsNo = binsScale
     binsBoundary = np.float_power(binsBase, np.arange(-1, binsNo))
     return binsBoundary
+
+
+def getPlotPicklePath(binsScale, loc):
+    binsBase, binsNo = binsScale
+    binsBase = 'b' + str(int(binsBase))
+    binsNo = 'n' + str(int(binsNo))
+    loc = loc.lower()
+    plotPicklePath = os.path.join(
+        'data/pickle', '_'.join([loc, binsBase, binsNo]) + '.pickle')
+    return plotPicklePath
+
+
+def checkPlotPickle(binsScale, loc):
+    plotPicklePath = getPlotPicklePath(binsScale, loc)
+    if os.path.isfile(plotPicklePath):
+        return True
+    else:
+        return False
