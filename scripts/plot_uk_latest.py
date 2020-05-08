@@ -61,10 +61,10 @@ def plot_uk_latest():
     binsScale = calBinsScale(caseGeo[caseDates[-1]])
     plotPicklePath = getPlotPicklePath(binsScale, loc='UK')
     if not checkPlotPickle(binsScale, loc='UK'):
-        caseDate = caseDates[-1]
-        plotCase(ax, caseGeo, caseDate)
         countryIreGeo.to_crs(epsg=3857).plot(
             ax=ax, color='silver', edgecolor='grey', linewidths=0.05)
+        caseDate = caseDates[-1]
+        plotCase(ax, caseGeo, caseDate)
         plotName(caseGeo, adjustNameUK)
         plt.text(
             0.2, 0.1,
