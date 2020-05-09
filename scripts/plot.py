@@ -108,3 +108,4 @@ def plotCasePickle(binsScale, caseGeo, caseDate, plotPicklePath):
             item.set_array(values)
         if item.get_label() == 'dateText':
             item.set_text(caseDate.strftime('%d %b %Y'))
+    return ax
