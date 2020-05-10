@@ -12,7 +12,7 @@ from geopandas.plotting import _flatten_multi_geoms, _mapclassify_choro
 from util import getAbbrv, calBinsScale, calBinsBoundary
 
 
-def plotCase(ax, caseGeo, caseDate, binsScale=None):
+def plotCase(ax, caseGeo, caseDate, binsScale=None, legendScale=1.0):
     '''
     plot the choropleth map
     '''
@@ -44,7 +44,7 @@ def plotCase(ax, caseGeo, caseDate, binsScale=None):
         for i, j in tuple(zip(range(len(texts)), bins))
     ]
 
-    font = FontProperties(family='Palatino', size=4)
+    font = FontProperties(family='Palatino', size=4 * legendScale)
 
     caseGeo.to_crs(epsg=3857).plot(
         column=caseDate,
@@ -52,12 +52,12 @@ def plotCase(ax, caseGeo, caseDate, binsScale=None):
         legend=True,
         legend_kwds={
             'handles': handles,
-            'bbox_to_anchor': (0.5, -0.1),
+            'bbox_to_anchor': (0.5, -0.1 / legendScale),
             'loc': 'lower center',
             'ncol': len(bins),
             'prop': font,
             'frameon': False,
-            'markerscale': 0.5,
+            'markerscale': 0.5 * legendScale,
         },
         scheme='user_defined',
         classification_kwds={

@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 UK Choropleth Map</title>
     <style>
-        img {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+
+        .center-fit {
             max-width: 100%;
-            height: auto;
+            max-height: 95vh;
+            margin: auto;
         }
     </style>
 </head>
@@ -18,12 +29,18 @@
         <h1>COVID-19 UK Choropleth Map</h1>
     </div>
     <div>
-        <h2>UK latest COVID-19 cases breakdown</h2>
-        <img src="img/uk_cases_latest.png"></img>
-    </div>
-    <div>
-        <h2>London latest COVID-19 cases breakdown</h2>
-        <img src="img/ldn_cases_latest.png"></img>
+        <div class="imgbox">
+            <h2>UK latest COVID-19 cases breakdown</h2>
+            <div class="center-fit">
+                <img class="center-fit" src="img/uk_cases_latest.png"></img>
+            </div>
+        </div>
+        <div class="imgbox">
+            <h2>London latest COVID-19 cases breakdown</h2>
+            <div class="center-fit">
+                <img class="center-fit" src="img/ldn_cases_latest.png"></img>
+            </div>
+        </div>
     </div>
 </body>
 

@@ -70,7 +70,7 @@ def plotUK():
         countryIreGeo.to_crs(epsg=3857).plot(
             ax=ax, color='silver', edgecolor='grey', linewidths=0.05)
         caseDate = caseDates[-1]
-        plotCase(ax, caseGeo, caseDate)
+        plotCase(ax, caseGeo, caseDate, legendScale=2.0)
         plotName(caseGeo, adjustNameUK)
         plt.text(
             0.2, 0.1,
