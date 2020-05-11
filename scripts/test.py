@@ -14,5 +14,6 @@ def testCalBinsBoundary():
             np.array([0.1, 1.0, 10.0, 100.0])).all()
 
 
-testCalBinsScale()
-testCalBinsBoundary()
+if __name__ == '__main__':
+    testCalBinsScale()
+    testCalBinsBoundary()

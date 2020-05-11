@@ -1,0 +1,7 @@
+geopandas=0.7.0
+mapclassify=2.2.0
+matplotlib
+numpy
+pandas
+pyproj
+requests
