@@ -2,6 +2,12 @@ import pandas as pd
 import numpy as np
 import sys
 import os
+from lxml import html
+import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 def getCode():
@@ -60,3 +66,19 @@ def checkPlotPickle(binsScale, loc):
         return True
     else:
         return False
+
+
+def retrieveFileLinkWls():
+    url = 'https://public.tableau.com/views/RapidCOVID-19virology-Public/Headlinesummary?:display_count=y&:embed=y&:showAppBanner=false&:showVizHome=no'
+    driver = webdriver.Chrome()
+    driver.get(url)
+    try:
+        fileLink = WebDriverWait(driver, 15).until(EC.presence_of_element_located(
+            (By.XPATH, '//*[@id="tabZoneId66"]/div/div/div/a'))).get_attribute('href')
+    finally:
+        driver.quit()
+    return fileLink
+
+
+if __name__ == '__main__':
+    retrieveFileLinkWls()

@@ -1,9 +1,10 @@
 import requests
 import os
+from util import retrieveFileLinkWls
 
 fileLinks = {
     'eng': 'https://coronavirus.data.gov.uk/downloads/csv/coronavirus-cases_latest.csv',
-    'wls': 'http://www2.nphs.wales.nhs.uk:8080/CommunitySurveillanceDocs.nsf/b4472ecab22fa0d580256f10003199e7/49b553ea08eff65780258566004e8895/$FILE/Rapid%20COVID-19%20surveillance%20data.xlsx',
+    'wls': retrieveFileLinkWls(),
     # 'sct': 'https://raw.githubusercontent.com/tomwhite/covid-19-uk-data/master/data/covid-19-cases-uk.csv',
     'sct': 'https://www.gov.scot/binaries/content/documents/govscot/publications/statistics/2020/04/coronavirus-covid-19-trends-in-daily-data/documents/covid-19-data-by-nhs-board/covid-19-data-by-nhs-board/govscot%3Adocument/COVID-19%2Bdata%2Bby%2BNHS%2BBoard%2B110520.xlsx',
     'nir': 'https://raw.githubusercontent.com/tomwhite/covid-19-uk-data/master/data/covid-19-indicators-uk.csv'
