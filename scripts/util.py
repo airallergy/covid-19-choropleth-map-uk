@@ -2,12 +2,11 @@ import pandas as pd
 import numpy as np
 import sys
 import os
-from lxml import html
-import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from geopandas.plotting import _mapclassify_choro
 
 
 def getCode():
@@ -31,32 +30,32 @@ def getGroup():
     return codeGroupDict
 
 
-def calBinsScale(caseNo):
-    caseNoMax = caseNo.max()
-    binsNo = 5.0
-    if caseNoMax < np.float_power(10, binsNo - 2):
-        caseNoMax3rdRootFloor = np.floor(np.cbrt(caseNoMax))
-        binsBase = caseNoMax3rdRootFloor
+def calBinsScale(caseData):
+    caseDataMax = caseData.max()
+    binsNum = 5.0
+    if caseDataMax < np.float_power(10, binsNum - 2):
+        caseDataMax3rdRootFloor = np.floor(np.cbrt(caseDataMax))
+        binsBase = caseDataMax3rdRootFloor
     else:
         binsBase = 10.0
-        caseNoMaxLog10 = np.log10(caseNoMax)
-        binsNo = np.floor(caseNoMaxLog10) + 2
-    return binsBase, binsNo
+        caseDataMaxLog10 = np.log10(caseDataMax)
+        binsNum = np.floor(caseDataMaxLog10) + 2
+    return binsBase, binsNum
 
 
 def calBinsBoundary(binsScale):
-    binsBase, binsNo = binsScale
-    binsBoundary = np.float_power(binsBase, np.arange(-1, binsNo))
+    binsBase, binsNum = binsScale
+    binsBoundary = np.float_power(binsBase, np.arange(-1, binsNum))
     return binsBoundary
 
 
 def getPlotPicklePath(binsScale, loc):
-    binsBase, binsNo = binsScale
+    binsBase, binsNum = binsScale
     binsBase = 'b' + str(int(binsBase))
-    binsNo = 'n' + str(int(binsNo))
+    binsNum = 'n' + str(int(binsNum))
     loc = loc.lower()
     plotPicklePath = os.path.join(
-        'data/pickle', '_'.join([loc, binsBase, binsNo]) + '.pickle')
+        'data/pickle', '_'.join([loc, binsBase, binsNum]) + '.pickle')
     return plotPicklePath
 
 
@@ -80,5 +79,12 @@ def retrieveFileLinkWls():
     return fileLink
 
 
-if __name__ == '__main__':
-    retrieveFileLinkWls()
+def classifyDf(df, binsScale):
+    dfArray = df.to_numpy()
+    dfShape = dfArray.shape
+    binsBoundary = calBinsBoundary(binsScale)
+    bins = binsBoundary[1:] - 0.01
+    binning = _mapclassify_choro(
+        dfArray.flatten(), scheme='UserDefined', bins=bins, k=len(bins))
+    df.loc[:, :] = binning.yb.reshape(dfShape)
+    return df

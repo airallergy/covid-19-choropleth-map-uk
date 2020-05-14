@@ -6,7 +6,7 @@ import shutil
 import numpy as np
 from itertools import compress
 from process_data import getData, getGeoIreland
-from util import calBinsScale, getPlotPicklePath
+from util import calBinsScale, getPlotPicklePath, classifyDf
 from plot import plotCase, plotName, plotCasePickle
 
 
@@ -68,7 +68,8 @@ def plotLdn():
     if (not binsScaleShifted) and os.path.isfile(caseYesterdayPicklePath):
         with open(caseYesterdayPicklePath, 'rb') as f:
             caseYesterday = pickle.load(f)
-        caseDiff = caseYesterday.eq(caseToday).all(axis=1).to_numpy()
+        caseDiff = classifyDf(caseYesterday, binsScale).eq(
+            classifyDf(caseToday, binsScale)).all(axis=1).to_numpy()
     else:
         caseDiff = np.full(len(caseDates), False)
 

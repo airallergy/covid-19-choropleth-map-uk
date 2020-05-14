@@ -59,7 +59,7 @@ def plotCase(ax, caseGeo, caseDate, binsScale=None, legendScale=1.0):
             'frameon': False,
             'markerscale': 0.5 * legendScale,
         },
-        scheme='user_defined',
+        scheme='UserDefined',
         classification_kwds={
             'bins': bins,  # mapclassify takes [..., ...)
         },
@@ -96,10 +96,10 @@ def plotCasePickle(binsScale, caseGeo, caseDate, plotPicklePath):
         ax = pickle.load(f)
     binsBoundary = calBinsBoundary(binsScale)
     bins = binsBoundary[1:] - 0.01
+    binning = _mapclassify_choro(
+        caseGeo.loc[:, caseDate], scheme='UserDefined', bins=bins, k=len(bins))
     geoms, multiindex = _flatten_multi_geoms(
         caseGeo.geometry, prefix="Geom")
-    binning = _mapclassify_choro(
-        caseGeo.loc[:, caseDate], scheme='user_defined', bins=bins, k=len(bins))
     values = np.take(binning.yb, multiindex, axis=0)
     geoms, multiindex = _flatten_multi_geoms(gpd.GeoSeries(geoms))
     values = np.take(values, multiindex, axis=0)
