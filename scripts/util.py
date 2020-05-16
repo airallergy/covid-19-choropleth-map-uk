@@ -86,5 +86,6 @@ def classifyDf(df, binsScale):
     bins = binsBoundary[1:] - 0.01
     binning = _mapclassify_choro(
         dfArray.flatten(), scheme='UserDefined', bins=bins, k=len(bins))
-    df.loc[:, :] = binning.yb.reshape(dfShape)
-    return df
+    dfClass = df.copy()
+    dfClass.loc[:, :] = binning.yb.reshape(dfShape)
+    return dfClass
