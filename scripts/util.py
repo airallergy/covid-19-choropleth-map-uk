@@ -73,7 +73,7 @@ def retrieveFileLinkWls():
     driver.get(url)
     try:
         fileLink = WebDriverWait(driver, 15).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="tabZoneId66"]/div/div/div/a'))).get_attribute('href')
+            (By.XPATH, '//*[@id="tabZoneId67"]/div/div/div/div[1]/div/span/div[3]/span/a'))).get_attribute('href')
     finally:
         driver.quit()
     return fileLink
