@@ -10,10 +10,9 @@ def testCalBinsScale():
 
 
 def testCalBinsBoundary():
-    assert (calBinsBoundary((10.0, 3.0)) ==
-            np.array([0.1, 1.0, 10.0, 100.0])).all()
+    assert (calBinsBoundary((10.0, 3.0)) == np.array([0.1, 1.0, 10.0, 100.0])).all()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     testCalBinsScale()
     testCalBinsBoundary()

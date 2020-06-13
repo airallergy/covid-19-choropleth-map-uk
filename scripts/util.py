@@ -10,23 +10,24 @@ from geopandas.plotting import _mapclassify_choro
 
 
 def getCode():
-    nameCode = pd.read_csv('data/csv/name_code.csv')
-    nameCodeDict = pd.Series(nameCode['code'].values,
-                             index=nameCode['name']).to_dict()
+    nameCode = pd.read_csv("data/csv/name_code.csv")
+    nameCodeDict = pd.Series(nameCode["code"].values, index=nameCode["name"]).to_dict()
     return nameCodeDict
 
 
 def getAbbrv():
-    nameAbbrv = pd.read_csv('data/csv/name_abbrv.csv')
-    nameAbbrvDict = pd.Series(nameAbbrv.countyNameAbbrv.values,
-                              index=nameAbbrv.countyName).to_dict()
+    nameAbbrv = pd.read_csv("data/csv/name_abbrv.csv")
+    nameAbbrvDict = pd.Series(
+        nameAbbrv.countyNameAbbrv.values, index=nameAbbrv.countyName
+    ).to_dict()
     return nameAbbrvDict
 
 
 def getGroup():
-    codeGroup = pd.read_csv('data/csv/code_group.csv')
-    codeGroupDict = pd.Series(codeGroup['group'].values,
-                              index=codeGroup['code']).to_dict()
+    codeGroup = pd.read_csv("data/csv/code_group.csv")
+    codeGroupDict = pd.Series(
+        codeGroup["group"].values, index=codeGroup["code"]
+    ).to_dict()
     return codeGroupDict
 
 
@@ -51,11 +52,12 @@ def calBinsBoundary(binsScale):
 
 def getPlotPicklePath(binsScale, loc):
     binsBase, binsNum = binsScale
-    binsBase = 'b' + str(int(binsBase))
-    binsNum = 'n' + str(int(binsNum))
+    binsBase = "b" + str(int(binsBase))
+    binsNum = "n" + str(int(binsNum))
     loc = loc.lower()
     plotPicklePath = os.path.join(
-        'data/pickle', '_'.join([loc, binsBase, binsNum]) + '.pickle')
+        "data/pickle", "_".join([loc, binsBase, binsNum]) + ".pickle"
+    )
     return plotPicklePath
 
 
@@ -68,12 +70,22 @@ def checkPlotPickle(binsScale, loc):
 
 
 def retrieveFileLinkWls():
-    url = 'https://public.tableau.com/views/RapidCOVID-19virology-Public/Headlinesummary?:display_count=y&:embed=y&:showAppBanner=false&:showVizHome=no'
+    url = "https://public.tableau.com/views/RapidCOVID-19virology-Public/Headlinesummary?:display_count=y&:embed=y&:showAppBanner=false&:showVizHome=no"
     driver = webdriver.Chrome()
     driver.get(url)
     try:
-        fileLink = WebDriverWait(driver, 15).until(EC.presence_of_element_located(
-            (By.XPATH, '//*[@id="tabZoneId67"]/div/div/div/div[1]/div/span/div[3]/span/a'))).get_attribute('href')
+        fileLink = (
+            WebDriverWait(driver, 15)
+            .until(
+                EC.presence_of_element_located(
+                    (
+                        By.XPATH,
+                        '//*[@id="tabZoneId67"]/div/div/div/div[1]/div/span/div[3]/span/a',
+                    )
+                )
+            )
+            .get_attribute("href")
+        )
     finally:
         driver.quit()
     return fileLink
@@ -85,7 +97,8 @@ def classifyDf(df, binsScale):
     binsBoundary = calBinsBoundary(binsScale)
     bins = binsBoundary[1:] - 0.01
     binning = _mapclassify_choro(
-        dfArray.flatten(), scheme='UserDefined', bins=bins, k=len(bins))
+        dfArray.flatten(), scheme="UserDefined", bins=bins, k=len(bins)
+    )
     dfClass = df.copy()
     dfClass.loc[:, :] = binning.yb.reshape(dfShape)
     return dfClass

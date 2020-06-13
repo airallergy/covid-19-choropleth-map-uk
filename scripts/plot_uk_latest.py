@@ -12,17 +12,17 @@ from plot import plotCase, plotName, plotCasePickle
 
 def adjustNameUK(xcoord, ycoord, name):
     if name in [
-        'Blaenau Gwent',
-        'Bridgend',
-        'Caerphilly',
-        'Cardiff',
-        'Merthyr Tydfil',
-        'Neath Port Talbot',
-        'Newport',
-        'Rhondda Cynon Taf',
-        'Swansea',
-        'Torfaen',
-        'Vale of Glamorgan',
+        "Blaenau Gwent",
+        "Bridgend",
+        "Caerphilly",
+        "Cardiff",
+        "Merthyr Tydfil",
+        "Neath Port Talbot",
+        "Newport",
+        "Rhondda Cynon Taf",
+        "Swansea",
+        "Torfaen",
+        "Vale of Glamorgan",
         # 'Antrim and Newtownabbey',
         # 'Ards and North Down',
         # 'Armagh City, Banbridge and Craigavon',
@@ -35,9 +35,9 @@ def adjustNameUK(xcoord, ycoord, name):
         # 'Mid Ulster',
         # 'Newry, Mourne and Down',
     ]:
-        font = FontProperties(family='Palatino', size=2)
+        font = FontProperties(family="Palatino", size=2)
     else:
-        font = FontProperties(family='Palatino', size=3)
+        font = FontProperties(family="Palatino", size=3)
     # if name == 'Ards and North Down':
     #     xcoord += 0.16
     # if name == 'Mid Ulster':
@@ -50,7 +50,7 @@ def adjustNameUK(xcoord, ycoord, name):
     #     ycoord -= 0.08
     # if name == 'Derry City and Strabane':
     #     xcoord += 0.12
-    if name == 'Rhondda Cynon Taf':
+    if name == "Rhondda Cynon Taf":
         xcoord += 0.02
         ycoord -= 0.02
     return xcoord, ycoord, name, font
@@ -59,38 +59,48 @@ def adjustNameUK(xcoord, ycoord, name):
 def plotUK():
     fig, ax = plt.subplots(1, figsize=(6, 9))
 
-    caseDates, caseGeo = getData(loc='UK')
+    caseDates, caseGeo = getData(loc="UK")
     countryIreGeo = getGeoIreland()
 
     binsScale = calBinsScale(caseGeo[caseDates[-1]])
-    plotPicklePath = getPlotPicklePath(binsScale, loc='uk')
+    plotPicklePath = getPlotPicklePath(binsScale, loc="uk")
     binsScaleShifted = not os.path.isfile(plotPicklePath)
 
     if binsScaleShifted:
         countryIreGeo.to_crs(epsg=3857).plot(
-            ax=ax, color='silver', edgecolor='grey', linewidths=0.05)
+            ax=ax, color="silver", edgecolor="grey", linewidths=0.05
+        )
         caseDate = caseDates[-1]
         plotCase(ax, caseGeo, caseDate, legendScale=2.0)
         plotName(caseGeo, adjustNameUK)
         plt.text(
-            0.2, 0.1,
-            caseDate.strftime('%d %b %Y'),
+            0.2,
+            0.1,
+            caseDate.strftime("%d %b %Y"),
             transform=ax.transAxes,
-            fontproperties=FontProperties(family='Palatino', size=8),
-            label='dateText'
+            fontproperties=FontProperties(family="Palatino", size=8),
+            label="dateText",
         )
-        with open(plotPicklePath, 'wb') as f:
+        with open(plotPicklePath, "wb") as f:
             pickle.dump(ax, f, pickle.HIGHEST_PROTOCOL)
 
-    caseToday = caseGeo.drop(
-        columns=['geometry', 'coords'], errors='ignore').set_index('name').transpose()
+    caseToday = (
+        caseGeo.drop(columns=["geometry", "coords"], errors="ignore")
+        .set_index("name")
+        .transpose()
+    )
     caseYesterdayPicklePath = os.path.join(
-        'data/pickle', '_'.join(['cases', 'uk', 'yesterday']) + '.pickle')
+        "data/pickle", "_".join(["cases", "uk", "yesterday"]) + ".pickle"
+    )
     if (not binsScaleShifted) and os.path.isfile(caseYesterdayPicklePath):
-        with open(caseYesterdayPicklePath, 'rb') as f:
+        with open(caseYesterdayPicklePath, "rb") as f:
             caseYesterday = pickle.load(f)
-        caseDiff = classifyDf(caseYesterday, binsScale).eq(
-            classifyDf(caseToday, binsScale)).all(axis=1).to_numpy()
+        caseDiff = (
+            classifyDf(caseYesterday, binsScale)
+            .eq(classifyDf(caseToday, binsScale))
+            .all(axis=1)
+            .to_numpy()
+        )
     else:
         caseDiff = np.full(len(caseDates), False)
 
@@ -98,14 +108,18 @@ def plotUK():
         plt.cla()
         ax = plotCasePickle(binsScale, caseGeo, caseDate, plotPicklePath)
         caseImgPath = os.path.join(
-            'docs/img', '_'.join(['uk', 'cases']), '_'.join(['uk', 'cases', caseDate.strftime('%Y_%m_%d')]) + '.png')
+            "docs/img",
+            "_".join(["uk", "cases"]),
+            "_".join(["uk", "cases", caseDate.strftime("%Y_%m_%d")]) + ".png",
+        )
         plt.savefig(caseImgPath, dpi=1200, transparent=False)
         if caseDate == caseDates[-1]:
             caseLatestImgPath = os.path.join(
-                'docs/img', '_'.join(['uk', 'cases', 'latest']) + '.png')
+                "docs/img", "_".join(["uk", "cases", "latest"]) + ".png"
+            )
             shutil.copy2(caseImgPath, caseLatestImgPath)
 
-    with open(caseYesterdayPicklePath, 'wb') as f:
+    with open(caseYesterdayPicklePath, "wb") as f:
         pickle.dump(caseToday, f, pickle.HIGHEST_PROTOCOL)
 
-    plt.close('all')
+    plt.close("all")
