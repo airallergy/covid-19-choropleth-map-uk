@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
+from matplotlib import __version__ as mpl_version
 import pickle
 import os
 import shutil
@@ -8,6 +9,7 @@ from itertools import compress
 from process_data import getData, getGeoIreland
 from util import calBinsScale, getPlotPicklePath, classifyDf
 from plot import plotCase, plotName, plotCasePickle
+import warnings
 
 
 def adjustNameLdn(xcoord, ycoord, name):
@@ -47,7 +49,14 @@ def plotLdn():
     plotPicklePath = getPlotPicklePath(binsScale, loc="ldn")
     binsScaleShifted = not os.path.isfile(plotPicklePath)
 
-    if binsScaleShifted:
+    with warnings.catch_warnings(record=True) as w:
+        with open(plotPicklePath, "rb") as f:
+            ax = pickle.load(f)
+        mplVersionShifted = "This figure was saved with matplotlib version" in str(
+            w[-1].message
+        )
+
+    if binsScaleShifted or mplVersionShifted:
         caseDate = caseDates[-1]
         plotCase(ax, caseGeo, caseDate)
         plotName(caseGeo, adjustNameLdn)

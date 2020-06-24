@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
+from matplotlib import __version__ as mpl_version
 import pickle
 import os
 import shutil
@@ -8,6 +9,7 @@ from itertools import compress
 from process_data import getData, getGeoIreland
 from util import calBinsScale, getPlotPicklePath, classifyDf
 from plot import plotCase, plotName, plotCasePickle
+import warnings
 
 
 def adjustNameUK(xcoord, ycoord, name):
@@ -66,7 +68,14 @@ def plotUK():
     plotPicklePath = getPlotPicklePath(binsScale, loc="uk")
     binsScaleShifted = not os.path.isfile(plotPicklePath)
 
-    if binsScaleShifted:
+    with warnings.catch_warnings(record=True) as w:
+        with open(plotPicklePath, "rb") as f:
+            ax = pickle.load(f)
+        mplVersionShifted = "This figure was saved with matplotlib version" in str(
+            w[-1].message
+        )
+
+    if binsScaleShifted or mplVersionShifted:
         countryIreGeo.to_crs(epsg=3857).plot(
             ax=ax, color="silver", edgecolor="grey", linewidths=0.05
         )
