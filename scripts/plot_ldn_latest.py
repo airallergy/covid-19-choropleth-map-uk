@@ -52,9 +52,12 @@ def plotLdn():
     with warnings.catch_warnings(record=True) as w:
         with open(plotPicklePath, "rb") as f:
             ax = pickle.load(f)
-        mplVersionShifted = "This figure was saved with matplotlib version" in str(
-            w[-1].message
-        )
+        try:
+            mplVersionShifted = "This figure was saved with matplotlib version" in str(
+                w[-1].message
+            )
+        except IndexError:
+            mplVersionShifted = False
 
     if binsScaleShifted or mplVersionShifted:
         caseDate = caseDates[-1]
