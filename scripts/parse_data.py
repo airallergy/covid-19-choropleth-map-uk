@@ -22,6 +22,9 @@ def cleanDataEng():
         }
     )
     df = df[df["group"] == "Upper tier local authority"].drop(columns=["group"])
+    # today's data all zero
+    df = df[df["date"] != pd.Timestamp.today().strftime("%Y-%m-%d")]
+
     return df
 
 
