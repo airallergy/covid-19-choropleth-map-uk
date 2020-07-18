@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-import sys
-import os
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -55,18 +54,10 @@ def getPlotPicklePath(binsScale, loc):
     binsBase = "b" + str(int(binsBase))
     binsNum = "n" + str(int(binsNum))
     loc = loc.lower()
-    plotPicklePath = os.path.join(
-        "data/pickle", "_".join([loc, binsBase, binsNum]) + ".pickle"
+    plotPicklePath = Path(
+        "data", "pickle", "_".join([loc, binsBase, binsNum]) + ".pickle"
     )
     return plotPicklePath
-
-
-def checkPlotPickle(binsScale, loc):
-    plotPicklePath = getPlotPicklePath(binsScale, loc)
-    if os.path.isfile(plotPicklePath):
-        return True
-    else:
-        return False
 
 
 def retrieveFileLinkWls():
@@ -78,10 +69,7 @@ def retrieveFileLinkWls():
             WebDriverWait(driver, 15)
             .until(
                 EC.presence_of_element_located(
-                    (
-                        By.XPATH,
-                        '//*[@id="tabZoneId67"]/div/div/div/div[1]/div/span/div[3]/span/a',
-                    )
+                    (By.XPATH, '//*[@id="tabZoneId66"]/div/div/div/a',)
                 )
             )
             .get_attribute("href")

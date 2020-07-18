@@ -1,5 +1,5 @@
 import pandas as pd
-import os
+from pathlib import Path
 import numpy as np
 from util import getCode
 
@@ -79,17 +79,20 @@ def cleanDataSct():
 def cleanDataNir():
     df = pd.read_csv(
         "data/csv/src/data_latest_nir.csv",
-        usecols=["Date", "Country", "Indicator", "Value"],
+        usecols=["date", "areaName", "cumCasesByPublishDate"],
     ).rename(
-        columns={
-            "Country": "name",
-            "Indicator": "group",
-            "Date": "date",
-            "Value": "cases",
-        }
+        columns={"areaName": "name", "date": "date", "cumCasesByPublishDate": "cases",}
     )
-    df = df[df["group"] == "ConfirmedCases"].drop(columns=["group"])
-    df = df[df["name"] == "Northern Ireland"]
+    if pd.Timestamp.today().weekday() >= 5:
+        line = pd.DataFrame(
+            {
+                "name": "Northern Ireland",
+                "date": pd.Timestamp.today().date().strftime("%Y-%m-%d"),
+                "cases": df.loc[0, "cases"],
+            },
+            index=[0],
+        )
+        df = pd.concat([line, df]).reset_index(drop=True)
     return df
 
 
@@ -112,4 +115,4 @@ def parseData(country, today=None):
     df.columns = pd.MultiIndex.from_arrays(
         np.array([df.columns, [nameCodeDict[name] for name in df.columns]])
     )
-    df.to_csv(os.path.join("data/csv", "cases_" + country.lower() + ".csv"))
+    df.to_csv(Path("data", "csv", "cases_" + country.lower() + ".csv"))

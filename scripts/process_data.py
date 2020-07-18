@@ -92,6 +92,9 @@ def processDataLdn():
         columns={"ctyua19cd": "code",}
     )
 
+    geoBoroLdn.loc[geoBoroLdn["code"] == "E09000001", "code"] = "E09000012"
+    geoBoroLdn = geoBoroLdn.dissolve(by="code")
+
     # Merge data
     caseGeoBoroLdn = geoBoroLdn.merge(caseLdn, on="code").drop(columns=["code"])
     caseGeoBoroLdn.iloc[:, 2:] = caseGeoBoroLdn.iloc[:, 2:].astype(float)

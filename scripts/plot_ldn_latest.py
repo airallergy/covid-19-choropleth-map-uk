@@ -1,12 +1,11 @@
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
-from matplotlib import __version__ as mpl_version
 import pickle
-import os
+from pathlib import Path
 import shutil
 import numpy as np
 from itertools import compress
-from process_data import getData, getGeoIreland
+from process_data import getData
 from util import calBinsScale, getPlotPicklePath, classifyDf
 from plot import plotCase, plotName, plotCasePickle
 import warnings
@@ -31,7 +30,7 @@ def adjustNameLdn(xcoord, ycoord, name):
         ycoord -= 0.005
     if name == "Camden":
         xcoord -= 0.005
-    if name == "Hackney":
+    if name.startswith("Hackney"):
         xcoord += 0.015
     if name == "Barking and Dagenham":
         ycoord -= 0.005
@@ -46,20 +45,22 @@ def plotLdn():
     caseDates, caseGeo = getData(loc="London")
 
     binsScale = calBinsScale(caseGeo[caseDates[-1]])
-    plotPicklePath = getPlotPicklePath(binsScale, loc="ldn")
-    binsScaleShifted = not os.path.isfile(plotPicklePath)
+    plotPicklePath = Path(getPlotPicklePath(binsScale, loc="ldn"))
+    rebase = False
+    if not plotPicklePath.is_file():
+        rebase = True
+    else:
+        with warnings.catch_warnings(record=True) as w:
+            with open(plotPicklePath, "rb") as f:
+                ax = pickle.load(f)
+            try:
+                rebase = "This figure was saved with matplotlib version" in str(
+                    w[-1].message
+                )
+            except IndexError:
+                pass
 
-    with warnings.catch_warnings(record=True) as w:
-        with open(plotPicklePath, "rb") as f:
-            ax = pickle.load(f)
-        try:
-            mplVersionShifted = "This figure was saved with matplotlib version" in str(
-                w[-1].message
-            )
-        except IndexError:
-            mplVersionShifted = False
-
-    if binsScaleShifted or mplVersionShifted:
+    if rebase:
         caseDate = caseDates[-1]
         plotCase(ax, caseGeo, caseDate)
         plotName(caseGeo, adjustNameLdn)
@@ -79,10 +80,10 @@ def plotLdn():
         .set_index("name")
         .transpose()
     )
-    caseYesterdayPicklePath = os.path.join(
-        "data/pickle", "_".join(["cases", "ldn", "yesterday"]) + ".pickle"
+    caseYesterdayPicklePath = Path(
+        "data", "pickle", "_".join(["cases", "ldn", "yesterday"]) + ".pickle"
     )
-    if (not binsScaleShifted) and os.path.isfile(caseYesterdayPicklePath):
+    if (not rebase) and caseYesterdayPicklePath.is_file():
         with open(caseYesterdayPicklePath, "rb") as f:
             caseYesterday = pickle.load(f)
         caseDiff = (
@@ -97,15 +98,16 @@ def plotLdn():
     for caseDate in compress(caseDates, ~caseDiff):
         plt.cla()
         ax = plotCasePickle(binsScale, caseGeo, caseDate, plotPicklePath)
-        caseImgPath = os.path.join(
-            "docs/img",
+        caseImgPath = Path(
+            "docs",
+            "img",
             "_".join(["ldn", "cases"]),
             "_".join(["ldn", "cases", caseDate.strftime("%Y_%m_%d")]) + ".png",
         )
         plt.savefig(caseImgPath, dpi=300, transparent=False)
         if caseDate == caseDates[-1]:
-            caseLatestImgPath = os.path.join(
-                "docs/img", "_".join(["ldn", "cases", "latest"]) + ".png"
+            caseLatestImgPath = Path(
+                "docs", "img", "_".join(["ldn", "cases", "latest"]) + ".png"
             )
             shutil.copy2(caseImgPath, caseLatestImgPath)
 
