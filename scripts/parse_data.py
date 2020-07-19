@@ -65,6 +65,7 @@ def cleanDataSct():
     )
     df = df.stack().reset_index()
     df.columns = ["name", "date", "cases"]
+    df = df[df["name"].str.startswith("NHS")]
     df["name"] = [name.split("NHS ")[1].replace("&", "and") for name in df["name"]]
     df["cases"] = pd.to_numeric(df["cases"], errors="coerce")
     df = df[df["cases"].notna()]
