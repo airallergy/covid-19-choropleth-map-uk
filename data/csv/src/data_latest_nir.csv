@@ -1,4 +1,9 @@
 areaType,areaName,areaCode,date,newCasesByPublishDate,cumCasesByPublishDate
+nation,Northern Ireland,N92000002,2020-07-22,9,5868
+nation,Northern Ireland,N92000002,2020-07-21,2,5859
+nation,Northern Ireland,N92000002,2020-07-20,,5857
+nation,Northern Ireland,N92000002,2020-07-19,,5834
+nation,Northern Ireland,N92000002,2020-07-18,,5834
 nation,Northern Ireland,N92000002,2020-07-17,19,5834
 nation,Northern Ireland,N92000002,2020-07-16,16,5815
 nation,Northern Ireland,N92000002,2020-07-15,9,5799
