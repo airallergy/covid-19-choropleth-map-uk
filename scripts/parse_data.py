@@ -24,7 +24,6 @@ def cleanDataEng():
     df = df[df["group"] == "Upper tier local authority"].drop(columns=["group"])
     # today's data all zero
     df = df[df["date"] != pd.Timestamp.today().strftime("%Y-%m-%d")]
-
     return df
 
 
@@ -84,7 +83,9 @@ def cleanDataNir():
     ).rename(
         columns={"areaName": "name", "date": "date", "cumCasesByPublishDate": "cases",}
     )
-    if pd.Timestamp.today().weekday() >= 5:
+    if (pd.Timestamp.today().weekday() >= 5) and (
+        pd.Timestamp.today().date().strftime("%Y-%m-%d") not in df["date"].to_list()
+    ):
         line = pd.DataFrame(
             {
                 "name": "Northern Ireland",
